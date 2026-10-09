@@ -34,7 +34,7 @@ The test project contains:
 
 A smaller pilot-only project contains just the three-post block and 5 mm plate. Use it first to select a bore without printing a complete wall shoe.
 
-[Download the pilot-only test](../models/self_tapping_fit/projects/self_tapping_3x16_pilot_test_P2S.3mf) — about 40 minutes / 21.42 g. The [complete trial](../models/self_tapping_fit/projects/self_tapping_3x16_fit_P2S.3mf) is about 1 h 21 min / 47.58 g.
+[Download the pilot-only test](../archive/prototypes/screw_pilot_fit/projects/self_tapping_3x16_pilot_test_P2S.3mf) — about 40 minutes / 21.42 g. The [complete trial](../archive/prototypes/screw_pilot_fit/projects/self_tapping_3x16_fit_P2S.3mf) is about 1 h 21 min / 47.58 g.
 
 Test the screw **through the 5 mm plate**. The bare 16 mm screw is longer than the 13.5 mm pilot depth and must not be driven fully into an uncovered test post. Use controlled hand tightening. Start with 2.4 mm; compare the other fresh bores if it is too tight or does not hold. Check cracking, seating, stripping and repeated removal before selecting the final shoe. No torque or load rating is assigned from the product image.
 

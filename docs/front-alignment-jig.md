@@ -2,7 +2,7 @@
 
 The user selected the **5.2 mm** PETG strip. The current [full-size kit](assembly.md) uses a flat jig with 4.4 mm-deep locators and no handle or supports. The original trials below remain reference files; printing them again is not required.
 
-The next print is the [three-strip PETG fit trial](../models/alignment_fit/projects/front_jig_fit_strips_P2S_PETG.3mf). Estimated on P2S with a 0.4 mm nozzle: **32 minutes and 15.71 g**. The project has been sliced; no physical fit has been verified.
+The next print is the [three-strip PETG fit trial](../archive/prototypes/alignment_fit/projects/front_jig_fit_strips_P2S_PETG.3mf). Estimated on P2S with a 0.4 mm nozzle: **32 minutes and 15.71 g**. The project has been sliced; no physical fit has been verified.
 
 ## First print and selection
 
@@ -16,7 +16,7 @@ The nominal slot is 5.3 × 15.3 mm. These candidates leave 0.4, 0.2 or 0.1 mm to
 
 ## Full jig after the strip test
 
-Matching full-jig STLs are in [models/alignment_fit/stl](../models/alignment_fit/stl/): `front_jig_4p9.stl`, `front_jig_5p1.stl`, and `front_jig_5p2.stl`. Print only the selected size.
+Matching full-jig STLs are in [the archived width-trial STLs](../archive/prototypes/alignment_fit/stl): `front_jig_4p9.stl`, `front_jig_5p1.stl`, and `front_jig_5p2.stl`. Print only the selected size.
 
 The body is 92 × 60 × 4 mm: two horizontal 20 mm bars and a 16 mm central spine. The four vertical capsule locators form an 80 × 40 mm rectangle and project 3.5 mm from the seating face, with a 0.4 mm tip lead-in. At full seating they remain 1.5 mm short of the rear of the 5 mm panel face. There are no hooks, rear locks or permanent panel pockets.
 

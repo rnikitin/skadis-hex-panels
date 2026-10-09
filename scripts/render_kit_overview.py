@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-root = Path(__file__).resolve().parents[1] / "models/full_kit/images"
+root = Path(__file__).resolve().parents[1] / "verification/current/images"
 parts = [
     ("PETG_plate_1.png", "S01 panel", "239.65 × 199.70 × 15 mm"),
     ("PETG_plate_3.png", "Eight wall shoes", "3 × 16 mm screws · 2.2 mm pilots"),
@@ -32,5 +32,9 @@ for ax, (file, title, caption) in zip(axs, parts):
         fontsize=10,
     )
 fig.subplots_adjust(left=0.03, right=0.97, bottom=0.13, top=0.85, wspace=0.14)
-fig.savefig(root / "kit_overview.png", dpi=150, facecolor=fig.get_facecolor())
+fig.savefig(
+    root.parents[2] / "docs/images/kit_overview.png",
+    dpi=150,
+    facecolor=fig.get_facecolor(),
+)
 plt.close(fig)

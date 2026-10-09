@@ -1,10 +1,10 @@
 # Historical front alignment jig trial
 
-The user selected 5.2 mm. Current print files are in the [full-size kit](../full_kit/README.md).
+The user selected 5.2 mm. Current print files are in the [full-size kit](../../../PRINT_THIS/README.md).
 
 Start with `projects/front_jig_fit_strips_P2S_PETG.3mf`: three labelled two-locator strips, about 32 minutes / 15.71 g PETG on P2S 0.4. Select a sliding fit on an existing printed panel before printing the matching `stl/front_jig_*.stl`.
 
-See the [English test and assembly guide](../../docs/front-alignment-jig.md). The full four-point jig must be tested dry across a horizontal and an oblique seam. Physical fit remains unverified.
+See the [English test and assembly guide](../../../docs/front-alignment-jig.md). The full four-point jig must be tested dry across a horizontal and an oblique seam. Physical fit remains unverified.
 
 - `stl/`: three strips and three full jig sizes, flat body face at z=0 for printing.
 - `step/`: editable inspection solids in their design coordinates.

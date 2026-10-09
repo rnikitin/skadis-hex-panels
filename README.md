@@ -2,18 +2,19 @@
 
 [![Validate CAD prototype](https://github.com/rnikitin/skadis-hex-panels/actions/workflows/validate.yml/badge.svg)](https://github.com/rnikitin/skadis-hex-panels/actions/workflows/validate.yml)
 
-Parametric S01 hex panels with a continuous slot lattice across seams, four diagonal ribs, independent adhesive wall shoes and a removable front alignment jig.
+**Start in [PRINT_THIS](PRINT_THIS/README.md).** This folder contains only the current printable version. Earlier prototypes are under `archive/`.
 
-**Current deliverable: the full-size test-print kit.** The 5.2 mm jig fit was selected from a PETG print. The complete jig now has 4.4 mm-deep locators and a flat body that prints without supports. Wall shoes use the user-selected 2.2 mm pilot for the purchased 3 × 16 mm self-tappers. No permanent inter-panel pins or receiver pockets remain.
+| File | Use |
+|---|---|
+| [S01_complete_kit_PETG_P2S.3mf](PRINT_THIS/S01_complete_kit_PETG_P2S.3mf) | Ready Bambu Studio project: two panels, eight mounts and one flat jig |
+| [S01_panel_PLA_P2S.3mf](PRINT_THIS/S01_panel_PLA_P2S.3mf) | Ready Bambu Studio project for the identical panel in PLA |
+| [S01_panel.stl](PRINT_THIS/S01_panel.stl) | Hex panel |
+| [S01_wall_mount_2p2.stl](PRINT_THIS/S01_wall_mount_2p2.stl) | Wall mount for the selected 3 × 16 mm self-tapper |
+| [S01_alignment_jig_5p2.stl](PRINT_THIS/S01_alignment_jig_5p2.stl) | Flat removable jig, 5.2 mm fit and 4.4 mm insertion depth |
 
-![Full-size test kit](models/full_kit/images/kit_overview.png)
+All plates print without supports. See [assembly](docs/assembly.md), [hardware](docs/hardware.md), and [STEP models](cad/) for details.
 
-## Download and print
-
-- [Complete PETG kit / Bambu Studio P2S 0.4](models/full_kit/projects/S01_full_test_kit_P2S_PETG_flat_jig.3mf): two panel plates, eight wall shoes and one flat jig.
-- [PLA panel alternative / P2S 0.4](models/full_kit/projects/S01_panel_P2S_PLA.3mf): identical panel geometry, PLA settings.
-- [Individual STL parts](models/full_kit/stl/) and [STEP parts/assemblies](models/full_kit/step/).
-- [Printing and assembly](docs/assembly.md), [hardware](docs/hardware.md), and [design dimensions](docs/design.md).
+![Current print kit](docs/images/kit_overview.png)
 
 Each panel is approximately **239.65 × 199.70 × 15 mm**. Panel faces are 5 mm thick; slots are 5.3 × 15.3 mm. Current slicer settings are 0.2 mm layers, four walls and 100% infill. Each PETG panel estimates 6 h 45 min / 239 g. PLA and PETG projects are separate because the installed command-line slicer failed on a combined-material run. Both delivered projects were successfully sliced and checked.
 
@@ -54,14 +55,13 @@ The historical 3 kg / 100 mm study used earlier geometry and idealized PLA/suppo
 ## Project map and history
 
 ```text
-src/skadis_hex/       Current panel, jig, shoes, build and print tools
-models/full_kit/     Current full-size STL, STEP, 3MF and verification records
-docs/                English dimensions, printing, hardware and fit reports
-models/alignment_fit/ Historical locator-width trial
-models/self_tapping_fit/ Historical pilot candidates
-models/current/      Superseded hidden-key prototype, retained for reference
-analysis/v3/         Historical stiffness solver and input/results
-archive/             Earlier geometry experiments
+PRINT_THIS/           Current STL and ready Bambu Studio files only
+cad/                  Current STEP parts and mounted assemblies
+verification/current/ Checks, previews and SHA-256 manifest
+src/skadis_hex/       Parametric geometry and build/slicing tools
+docs/                 English printing, hardware and design documentation
+archive/              Superseded prototypes and experiments
+analysis/v3/          Historical stiffness comparison
 ```
 
 The rear-open hidden key failed its PETG retention test and was abandoned. Read the [fit report](docs/fit_reports/2026-10-09-hidden-key-retention.md) and [design history](docs/history.md). To reproduce that geometry, use `legacy-build`, `legacy-validate` and `legacy-slice` with a separate output directory; ordinary `build/validate/slice` commands now target the full kit.

@@ -12,4 +12,4 @@ The supplier diagram gives a 3 mm major diameter, 16 mm under-head length, and 4
 
 This shoe has no metal nut pocket. It is a separate variant from the released M4 nut shoe. The small head is intended for the matching 3.4 mm mounting hole, rather than the released 4.5 mm hole.
 
-See [full fit instructions](../../docs/self-tapping-3x16.md). `parameters.json` records nominal dimensions and unresolved physical checks; `print_metrics.json` identifies the statistics for each sliced project.
+See [full fit instructions](../../../docs/self-tapping-3x16.md). `parameters.json` records nominal dimensions and unresolved physical checks; `print_metrics.json` identifies the statistics for each sliced project.

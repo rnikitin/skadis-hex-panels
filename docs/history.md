@@ -1,6 +1,6 @@
 # Design history
 
-All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; the printable full-size kit is under `models/full_kit`.
+All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; the printable full-size kit is under `PRINT_THIS`.
 
 | Stage | Result and decision |
 |---|---|

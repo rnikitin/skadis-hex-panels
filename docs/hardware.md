@@ -27,4 +27,4 @@ The adhesive-base centroid is offset 8 mm from the screw. Orient this offset upw
 
 The planned surface is wallpaper and the tape specification is unverified. No adhesive capacity is assigned by these dimensions.
 
-The legacy M4 shoe and the earlier 2.2 / 2.4 / 2.6 calibration parts remain in historical directories. Use `wall_shoe_3x16_pilot_2p2.stl` from [the full kit](../models/full_kit/stl/) for this build.
+The legacy M4 shoe and the earlier 2.2 / 2.4 / 2.6 calibration parts remain in historical directories. Use `wall_shoe_3x16_pilot_2p2.stl` from [the full kit](../PRINT_THIS) for this build.

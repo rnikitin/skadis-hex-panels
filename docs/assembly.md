@@ -4,7 +4,7 @@ The next print is the full S01 panel kit. The 5.2 mm PETG locator width was sele
 
 ## Choose the print project
 
-Open [S01_full_test_kit_P2S_PETG_flat_jig.3mf](../models/full_kit/projects/S01_full_test_kit_P2S_PETG_flat_jig.3mf) for the complete PETG kit:
+Open [S01_full_test_kit_P2S_PETG_flat_jig.3mf](../PRINT_THIS/S01_complete_kit_PETG_P2S.3mf) for the complete PETG kit:
 
 | Plate | Contents | Estimated time | Material |
 |---|---|---:|---:|
@@ -13,7 +13,7 @@ Open [S01_full_test_kit_P2S_PETG_flat_jig.3mf](../models/full_kit/projects/S01_f
 | 3 | Eight wall shoes, 2.2 mm pilot | 2 h 39 min | 77.07 g PETG |
 | 4 | One flat alignment jig, 5.2 mm fit | 39 min | 20.96 g PETG |
 
-For a PLA panel, use [S01_panel_P2S_PLA.3mf](../models/full_kit/projects/S01_panel_P2S_PLA.3mf): 6 h 43 min / 240.59 g. It has exactly the same panel geometry. This is an alternative to a PETG panel plate, not an additional required panel. To compare materials, print one panel from each project and the PETG hardware plates.
+For a PLA panel, use [S01_panel_P2S_PLA.3mf](../PRINT_THIS/S01_panel_PLA_P2S.3mf): 6 h 43 min / 240.59 g. It has exactly the same panel geometry. This is an alternative to a PETG panel plate, not an additional required panel. To compare materials, print one panel from each project and the PETG hardware plates.
 
 All projects target P2S / 0.4 mm, 0.2 mm layers, four walls, 100% infill and Arachne. They use resolved Generic PLA and Generic PETG presets from the installed Bambu Studio distribution. Match the selected material preset and plate type to the actual spool and bed before printing. Keep scale at 100%.
 
