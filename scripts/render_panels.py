@@ -8,6 +8,7 @@ import argparse
 import numpy as np
 import vtk
 from vtk.util.numpy_support import numpy_to_vtk
+from shapely.geometry import MultiPoint, Point
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "docs/images"
@@ -74,7 +75,73 @@ def actor(mesh, position=(0, 0, 0), color=(0.87, 0.87, 0.855), roughness=0.7):
     return a
 
 
-def render(file, mesh, centres, camera_direction, wall_z, size=(2200, 1800)):
+def front_contour_actor(mesh, position):
+    """A subtle display-only stroke along real outer front edges.
+
+    Derive the hull from the STL and retain actual edge segments only, so
+    boundary slots remain open and the nominal panel spacing is preserved.
+    """
+    front = [
+        mesh.GetPoint(i)[:2]
+        for i in range(mesh.GetNumberOfPoints())
+        if abs(mesh.GetPoint(i)[2]) < 1e-5
+    ]
+    hull = MultiPoint(front).convex_hull.boundary
+    edges = vtk.vtkFeatureEdges()
+    edges.SetInputData(mesh)
+    edges.FeatureEdgesOn()
+    edges.BoundaryEdgesOn()
+    edges.ManifoldEdgesOff()
+    edges.NonManifoldEdgesOff()
+    edges.ColoringOff()
+    edges.Update()
+    source = edges.GetOutput()
+    points = vtk.vtkPoints()
+    lines = vtk.vtkCellArray()
+    seen = set()
+    for i in range(source.GetNumberOfCells()):
+        cell = source.GetCell(i)
+        if cell.GetNumberOfPoints() != 2:
+            continue
+        a, b = [source.GetPoint(cell.GetPointId(j)) for j in (0, 1)]
+        if max(abs(a[2]), abs(b[2])) > 1e-5:
+            continue
+        if any(
+            hull.distance(Point(x, y)) > 0.001
+            for x, y in [a[:2], b[:2], ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)]
+        ):
+            continue
+        key = tuple(
+            sorted([tuple(round(v, 5) for v in a), tuple(round(v, 5) for v in b)])
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        ia = points.InsertNextPoint(a)
+        ib = points.InsertNextPoint(b)
+        lines.InsertNextCell(2)
+        lines.InsertCellPoint(ia)
+        lines.InsertCellPoint(ib)
+    data = vtk.vtkPolyData()
+    data.SetPoints(points)
+    data.SetLines(lines)
+    mapper = vtk.vtkPolyDataMapper()
+    mapper.SetInputData(data)
+    mapper.ScalarVisibilityOff()
+    result = vtk.vtkActor()
+    result.SetMapper(mapper)
+    result.SetPosition(*position)
+    prop = result.GetProperty()
+    prop.LightingOff()
+    prop.SetColor(0.32, 0.34, 0.36)
+    prop.SetOpacity(0.55)
+    prop.SetLineWidth(1.4)
+    return result
+
+
+def render(
+    file, mesh, centres, camera_direction, wall_z, size=(2200, 1800), seam_edges=False
+):
     renderer = vtk.vtkRenderer()
     renderer.SetBackground(0.80, 0.815, 0.825)
     renderer.SetUseImageBasedLighting(True)
@@ -92,6 +159,8 @@ def render(file, mesh, centres, camera_direction, wall_z, size=(2200, 1800)):
     span = max(maxx - minx, maxy - miny)
     for x, y in centres:
         renderer.AddActor(actor(mesh, (x - cx, y - cy, 0)))
+        if seam_edges:
+            renderer.AddActor(front_contour_actor(mesh, (x - cx, y - cy, -0.02)))
     # The neutral studio plane is behind the front-view panels, or below
     # the face-down panel for the rear product view.
     plane = vtk.vtkPlaneSource()
@@ -168,7 +237,15 @@ def main():
     mesh = load_mesh(PANEL)
     size = (1200, 1000) if args.preview else (2400, 2000)
     render("S01_front.png", mesh, [(0, 0)], (0, 0, -1), 24, size)
-    render("S01_front_assembly.png", mesh, NEIGHBOURS, (0, 0, -1), 24, size)
+    render(
+        "S01_front_assembly.png",
+        mesh,
+        NEIGHBOURS,
+        (0, 0, -1),
+        24,
+        size,
+        seam_edges=True,
+    )
     render("S01_rear_oblique.png", mesh, [(0, 0)], (0.52, -0.27, 0.81), -0.3, size)
     mounts = load_mesh(ROOT / "PRINT_THIS/S01_wall_mount_2p2.stl")
     mount_centres = [(x, y) for y in (-32, 32) for x in (-66, -22, 22, 66)]

@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 root = Path(__file__).resolve().parents[1] / "docs/images"
 parts = [
-    ("S01_rear_oblique.png", "S01 panel", "239.65 × 199.70 × 15 mm"),
+    ("S01_rear_oblique.png", "Two S01 panels", "239.65 × 199.70 × 15 mm"),
     ("S01_mounts.png", "Eight wall shoes", "3 × 16 mm screws · 2.2 mm pilots"),
     ("S01_jig.png", "Flat alignment jig", "5.2 × 15.2 × 4.4 mm locators"),
 ]
