@@ -44,6 +44,7 @@ paths = [root / dest for dest in files.values()] + [
     root / "PRINT_THIS/README.md",
     root / "docs/images/kit_overview.png",
 ]
+paths += sorted((root / "docs/images").glob("S01*.png"))
 manifest = {
     str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
     for p in sorted(paths)
