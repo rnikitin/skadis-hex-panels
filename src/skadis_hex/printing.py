@@ -3,10 +3,14 @@ import sys, json, subprocess, zipfile, shutil
 from .three_mf import plate
 
 
-def slice_geometry_project(output, geometry_stem, project_stem, slicer=None):
+def slice_geometry_project(
+    output, geometry_stem, project_stem, slicer=None, material="PLA"
+):
     import os
 
     ROOT = Path(output).resolve()
+    if material not in ("PLA", "PETG"):
+        raise ValueError("Material must be PLA or PETG")
     default = "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio"
     executable = str(
         slicer
@@ -18,13 +22,14 @@ def slice_geometry_project(output, geometry_stem, project_stem, slicer=None):
         raise RuntimeError(
             "Bambu Studio was not found; pass --slicer /path/to/executable"
         )
-    work = ROOT.parent / f"slice-work-{ROOT.name}"
+    work = ROOT.parent / f"slice-work-{ROOT.name}-{project_stem}"
     work.mkdir(parents=True, exist_ok=True)
     profiles = work / "profiles"
     profiles.mkdir(exist_ok=True)
     original = Path(__file__).with_name("print_profiles")
-    for name in ("machine", "filament"):
-        shutil.copy2(original / f"{name}.json", profiles / f"{name}.json")
+    shutil.copy2(original / "machine.json", profiles / "machine.json")
+    filament = "filament_petg.json" if material == "PETG" else "filament.json"
+    shutil.copy2(original / filament, profiles / "filament.json")
     p = json.loads((original / "process.json").read_text())
     p.update(
         wall_generator="arachne",
@@ -73,6 +78,13 @@ def slice_geometry_project(output, geometry_stem, project_stem, slicer=None):
             cfg["wall_generator"] == "arachne"
             and cfg["sparse_infill_density"] == "100%"
         )
+        assert cfg["filament_type"] == [material], cfg["filament_type"]
+        assert f"; filament_type = {material}" in g
+        assert cfg["enable_support"] == "0"
+        assert cfg["layer_height"] == "0.2" and cfg["wall_loops"] == "4"
+        (ROOT / "images" / f"{project_stem}.png").write_bytes(
+            z.read("Metadata/plate_1.png")
+        )
         (ROOT / "images" / "test_plate.png").write_bytes(z.read("Metadata/plate_1.png"))
     shutil.copy2(file, ROOT / "projects" / file.name)
     (ROOT / "slicing_validation.json").write_text(
@@ -81,17 +93,23 @@ def slice_geometry_project(output, geometry_stem, project_stem, slicer=None):
                 exit_code=0,
                 toolpaths_generated=True,
                 statistics=stats,
-                settings="P2S0.4/PLA/0.2mm/4walls/100%/Arachne",
+                settings=f"P2S0.4/{material}/0.2mm/4walls/100%/Arachne",
+                material=cfg["filament_type"],
+                nozzle_temperature=cfg["nozzle_temperature"],
+                textured_plate_temp=cfg["textured_plate_temp"],
                 physical_print_started=False,
             ),
             indent=2,
         )
         + "\n"
     )
+    shutil.copy2(
+        ROOT / "slicing_validation.json", ROOT / f"{project_stem}_slicing.json"
+    )
     print(stats)
 
 
-def main(output, slicer=None):
+def main(output, slicer=None, material="PLA"):
     ROOT = Path(output).resolve()
     parts = {
         p["name"]: p
@@ -115,5 +133,9 @@ def main(output, slicer=None):
         row = max(row, h)
     plate(ROOT, "corner_fit_test", placements)
     slice_geometry_project(
-        ROOT, "corner_fit_test", "corner_fit_test_24x8x3p2_P2S", slicer
+        ROOT,
+        "corner_fit_test",
+        "corner_fit_test_24x8x3p2_P2S",
+        slicer,
+        material=material,
     )

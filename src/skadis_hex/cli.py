@@ -8,9 +8,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "command",
-        choices=("build", "validate", "slice", "screw-fit", "slice-screw-fit"),
+        choices=(
+            "build",
+            "validate",
+            "slice",
+            "screw-fit",
+            "slice-screw-fit",
+            "jig-fit",
+            "slice-jig-fit",
+        ),
     )
-    parser.add_argument("--output", type=Path, default=Path("build/current"))
+    parser.add_argument("--output", type=Path)
     parser.add_argument(
         "--pilot-only",
         action="store_true",
@@ -19,14 +27,41 @@ def main():
     parser.add_argument(
         "--slicer", type=Path, help="Bambu Studio executable (slicing commands)"
     )
+    parser.add_argument(
+        "--material",
+        choices=("PLA", "PETG"),
+        help="Material preset; jig trials default to PETG",
+    )
     args = parser.parse_args()
-    output = args.output.resolve()
+    default_output = (
+        "build/alignment-fit"
+        if "jig-fit" in args.command
+        else "build/self-tapping-fit"
+        if "screw-fit" in args.command
+        else "build/current"
+    )
+    output = (args.output or Path(default_output)).resolve()
     output.mkdir(parents=True, exist_ok=True)
 
     from . import joints
 
     joints.ROOT = output
-    if args.command == "screw-fit":
+    if args.command == "jig-fit":
+        from .alignment import build
+
+        build(output)
+    elif args.command == "slice-jig-fit":
+        from .printing import slice_geometry_project
+
+        material = args.material or "PETG"
+        slice_geometry_project(
+            output,
+            "front_jig_fit_strips",
+            f"front_jig_fit_strips_P2S_{material}",
+            args.slicer,
+            material=material,
+        )
+    elif args.command == "screw-fit":
         from .screw_fit import build
 
         build(output)
@@ -38,7 +73,9 @@ def main():
             if args.pilot_only
             else "self_tapping_3x16_fit"
         )
-        slice_geometry_project(output, stem, stem + "_P2S", args.slicer)
+        slice_geometry_project(
+            output, stem, stem + "_P2S", args.slicer, material=args.material or "PLA"
+        )
     elif args.command == "build":
         joints.build()
     elif args.command == "validate":
@@ -48,7 +85,7 @@ def main():
     else:
         from .printing import main as slice_project
 
-        slice_project(output, args.slicer)
+        slice_project(output, args.slicer, material=args.material or "PLA")
 
 
 if __name__ == "__main__":

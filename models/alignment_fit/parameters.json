@@ -1,0 +1,298 @@
+{
+  "status": "geometry checked; physical fit pending",
+  "body_mm": [
+    92,
+    60,
+    4
+  ],
+  "locator_grid_mm": [
+    80,
+    40
+  ],
+  "locator_projection_mm": 3.5,
+  "locator_lead_in_mm": 0.4,
+  "locator_width_candidates_mm": [
+    4.9,
+    5.1,
+    5.2
+  ],
+  "slot_mm": [
+    5.3,
+    15.3
+  ],
+  "panel_face_mm": 5,
+  "remaining_depth_to_panel_rear_mm": 1.5,
+  "placement_checks": [
+    {
+      "edge": 0,
+      "neighbour_translation_mm": [
+        180.0,
+        100.0
+      ],
+      "locator_centres_mm": [
+        [
+          40,
+          20
+        ],
+        [
+          120,
+          20
+        ],
+        [
+          40,
+          60
+        ],
+        [
+          120,
+          60
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669409
+    },
+    {
+      "edge": 1,
+      "neighbour_translation_mm": [
+        0.0,
+        200.0
+      ],
+      "locator_centres_mm": [
+        [
+          -60,
+          80
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          -60,
+          120
+        ],
+        [
+          20,
+          120
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "minimum_head_clearance_mm": 27.549999999999997,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 2,
+      "neighbour_translation_mm": [
+        -180.0,
+        100.0
+      ],
+      "locator_centres_mm": [
+        [
+          -140,
+          40
+        ],
+        [
+          -60,
+          40
+        ],
+        [
+          -140,
+          80
+        ],
+        [
+          -60,
+          80
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669411
+    },
+    {
+      "edge": 3,
+      "neighbour_translation_mm": [
+        -180.0,
+        -100.0
+      ],
+      "locator_centres_mm": [
+        [
+          -140,
+          -80
+        ],
+        [
+          -60,
+          -80
+        ],
+        [
+          -140,
+          -40
+        ],
+        [
+          -60,
+          -40
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 4,
+      "neighbour_translation_mm": [
+        0.0,
+        -200.0
+      ],
+      "locator_centres_mm": [
+        [
+          -60,
+          -120
+        ],
+        [
+          20,
+          -120
+        ],
+        [
+          -60,
+          -80
+        ],
+        [
+          20,
+          -80
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "minimum_head_clearance_mm": 27.549999999999997,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 5,
+      "neighbour_translation_mm": [
+        180.0,
+        -100.0
+      ],
+      "locator_centres_mm": [
+        [
+          40,
+          -60
+        ],
+        [
+          120,
+          -60
+        ],
+        [
+          40,
+          -20
+        ],
+        [
+          120,
+          -20
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669411
+    }
+  ],
+  "print_orientation": "flat front face on bed; locators upward",
+  "first_print": "three labelled two-locator strips only",
+  "physical_fit_tested": false,
+  "full_four_locator_test_required": true,
+  "permanent_panel_connection": false,
+  "parts": [
+    {
+      "name": "fit_strip_4p9",
+      "size_mm": [
+        16.0,
+        60.0,
+        7.5
+      ],
+      "volume_cm3": 4.297283153313256,
+      "watertight": true,
+      "connected_components": 1
+    },
+    {
+      "name": "front_jig_4p9",
+      "size_mm": [
+        92.0,
+        60.0,
+        7.5
+      ],
+      "volume_cm3": 16.9267560552816,
+      "watertight": true,
+      "connected_components": 1
+    },
+    {
+      "name": "fit_strip_5p1",
+      "size_mm": [
+        16.0,
+        60.0,
+        7.500000000000001
+      ],
+      "volume_cm3": 4.325557396635904,
+      "watertight": true,
+      "connected_components": 1
+    },
+    {
+      "name": "front_jig_5p1",
+      "size_mm": [
+        92.0,
+        60.0,
+        7.500000000000001
+      ],
+      "volume_cm3": 16.9799253419269,
+      "watertight": true,
+      "connected_components": 1
+    },
+    {
+      "name": "fit_strip_5p2",
+      "size_mm": [
+        16.0,
+        60.0,
+        7.5
+      ],
+      "volume_cm3": 4.334268411911545,
+      "watertight": true,
+      "connected_components": 1
+    },
+    {
+      "name": "front_jig_5p2",
+      "size_mm": [
+        92.0,
+        60.0,
+        7.5
+      ],
+      "volume_cm3": 17.001248812478178,
+      "watertight": true,
+      "connected_components": 1
+    }
+  ]
+}

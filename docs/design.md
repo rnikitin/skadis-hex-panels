@@ -1,5 +1,7 @@
 # Design specification
 
+The hidden-key section below records the v0.1.0 prototype. That mechanism failed its PETG test and has been superseded by the [removable front alignment jig](front-alignment-jig.md). The lattice, ribs and independent wall mounting remain the basis of the next panel.
+
 ## Shared lattice
 
 Slot centres use `x = 20 i + 20`, `y = 40 j + 20 (i mod 2)`. The nominal lattice is preserved across tile translations `(180, 100)` and `(0, 200)`, including the 40 mm vertical spacing required by two-row accessories.

@@ -14,8 +14,9 @@ All items below describe earlier experiments. The active implementation is under
 | v4 removable registration jig | Used working slots during positioning; user preferred hidden permanent alignment in the perimeter |
 | Continuous perimeter with local hook relief | Replaced the excessive 16 × 34 mm rear clearance boxes; extra downward hook travel requested |
 | Hidden joint v1, 14.7 × 4.4 × 2.4 key | Geometric insertion prototype; user requested a larger handling size |
-| Hidden joint v2, 24 × 8 × 3.2 key | Receivers moved into lattice corridors; physical test failed retention and showed excessive play. Rear capture needs redesign; shorter keys are acceptable |
+| Hidden joint v2, 24 × 8 × 3.2 key | PETG physical test failed retention and showed excessive play. Permanent keys, dowels and receivers were subsequently abandoned |
 | Missing triangular coupon patch | A crop split off a small face island and the export kept only the largest solid. Crop boundaries moved; filtering removed; regression check now preserves the patch |
+| Removable front jig, revisited | User approved two horizontal bars and a central spine, four short locators on an 80 × 40 grid. Open sides clear wall screw heads. Three labelled PETG fit strips precede the full jig |
 
 ## Retained findings
 
@@ -26,11 +27,12 @@ All items below describe earlier experiments. The active implementation is under
 - Leave room for the hook's downward movement behind boundary slots.
 - Every tile has four independent wall mounts; inter-panel features serve alignment.
 - Adding a tile beside multiple existing neighbours must use a common approach toward the wall.
-- Keep connector prototypes replaceable and large enough to handle.
+- Use a removable front jig for positioning; leave no permanent inter-panel hardware.
 
 ## Remaining physical work
 
-- Print the current corner test and measure fit/retention/removal.
+- Select a sliding fit with the labelled 4.9 / 5.1 / 5.2 strips, then test the matching full jig across both seam orientations.
+- Select the wall-shoe pilot diameter using the purchased 3 × 16 mm self-tappers.
 - Check actual printed accessories, particularly two-row accessories and seam-spanning mounts.
 - Check the local rear hook relief and front screw-head clearance.
 - Test the chosen tape on the actual wallpaper over time.

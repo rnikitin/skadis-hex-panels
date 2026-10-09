@@ -28,3 +28,5 @@ jobs:
         run: skadis-hex validate --output build/ci
       - name: Build self-tapping wall-mount fit trial
         run: skadis-hex screw-fit --output build/self-tapping-fit
+      - name: Build removable front-jig fit trial
+        run: skadis-hex jig-fit --output build/alignment-fit

@@ -1,5 +1,7 @@
 # Assembly and printing
 
+**Historical hidden-key assembly:** the key mechanism below was superseded after its failed PETG test. For the next print, use the [front alignment jig fit trial](front-alignment-jig.md). Wall-shoe pilot selection for the purchased 3 × 16 mm self-tappers remains pending.
+
 ## First test
 
 Open the current [Bambu Studio test project](../models/current/projects/corner_fit_test_24x8x3p2_P2S.3mf). It contains three corner fragments and four identical keys: two for the assembly, two spares. The two existing fragments represent neighbours on a horizontal and an oblique seam.

@@ -4,7 +4,7 @@
 
 The user reports that the printed key falls out of the rear-open receiver easily, does not seat tightly, and allows the board assembly to wobble. The current retention design has failed its physical fit test. The user is comfortable reducing the key length.
 
-The exact printed revision and material have been requested and are not yet reconfirmed for this particular test. A close-up of the printed receiver is needed to distinguish missing/rounded retaining features from dimensional clearance.
+The user confirmed the v2 (24 × 8 × 3.2 mm) trial was printed in PETG. Actual key and receiver dimensions have not been measured. A simpler closed-socket dowel was briefly considered, then the user abandoned permanent inter-panel connections.
 
 ## Verified design facts for v2
 
@@ -21,6 +21,6 @@ Ideal section sampling at layer mid-planes 12.7/12.9/13.1 mm reaches approximate
 
 The nominal capture is too small to be robust to the slicing and printed dimensions; the generous receiver clearance separately explains part of the play. This hypothesis has not yet been confirmed by measuring the actual print.
 
-Inspect the printed retaining features and measure the key neck and receiver width before selecting the next dimensions. The replacement should have a clearly defined rear capture feature and controlled alignment clearance. A shorter key is permitted; its spring travel and release path must be checked again rather than scaling the previous key blindly.
+The selected next direction is a [removable front alignment jig](../front-alignment-jig.md). Each panel remains independently mounted. The failed key and its receiver are preserved as historical prototypes; their retention redesign is no longer planned.
 
 The existing CAD tests only establish a possible insertion envelope under prescribed arm deformation. They do not validate holding force. No replacement connection is released by this report.
