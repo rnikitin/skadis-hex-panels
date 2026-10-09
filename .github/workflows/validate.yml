@@ -22,7 +22,13 @@ jobs:
         run: python -m pip install '.[dev]'
       - name: Check geometry snapshots and slot lattice
         run: python -m pytest -q
+      - name: Check final printable files and documentation
+        run: python scripts/check_delivery.py
       - name: Build current prototype
         run: skadis-hex build --output build/ci
       - name: Check solids and insertion paths
         run: skadis-hex validate --output build/ci
+      - name: Build self-tapping wall-mount fit trial
+        run: skadis-hex screw-fit --output build/self-tapping-fit
+      - name: Build removable front-jig fit trial
+        run: skadis-hex jig-fit --output build/alignment-fit

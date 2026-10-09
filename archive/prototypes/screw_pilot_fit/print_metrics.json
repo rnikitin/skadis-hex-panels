@@ -1,0 +1,20 @@
+[
+  {
+    "project": "self_tapping_3x16_fit_P2S.3mf",
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 1h 20m 41s; total estimated time: 1h 21m 1s",
+      "; total filament weight [g] : 47.58"
+    ],
+    "physical_print_started": false
+  },
+  {
+    "project": "self_tapping_3x16_pilot_test_P2S.3mf",
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 39m 34s; total estimated time: 39m 54s",
+      "; total filament weight [g] : 21.42"
+    ],
+    "physical_print_started": false
+  }
+]

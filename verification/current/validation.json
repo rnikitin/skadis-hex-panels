@@ -1,0 +1,332 @@
+{
+  "status": "PASS",
+  "symmetry_axes": 2,
+  "open_slot_prisms": 56,
+  "mounting_shoe_collisions": 0,
+  "placement_checks": [
+    {
+      "edge": 0,
+      "neighbour_translation_mm": [
+        180.0,
+        100.0
+      ],
+      "locator_centres_mm": [
+        [
+          40,
+          20
+        ],
+        [
+          120,
+          20
+        ],
+        [
+          40,
+          60
+        ],
+        [
+          120,
+          60
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669409
+    },
+    {
+      "edge": 1,
+      "neighbour_translation_mm": [
+        0.0,
+        200.0
+      ],
+      "locator_centres_mm": [
+        [
+          -60,
+          80
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          -60,
+          120
+        ],
+        [
+          20,
+          120
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "minimum_head_clearance_mm": 27.549999999999997,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 2,
+      "neighbour_translation_mm": [
+        -180.0,
+        100.0
+      ],
+      "locator_centres_mm": [
+        [
+          -140,
+          40
+        ],
+        [
+          -60,
+          40
+        ],
+        [
+          -140,
+          80
+        ],
+        [
+          -60,
+          80
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669411
+    },
+    {
+      "edge": 3,
+      "neighbour_translation_mm": [
+        -180.0,
+        -100.0
+      ],
+      "locator_centres_mm": [
+        [
+          -140,
+          -80
+        ],
+        [
+          -60,
+          -80
+        ],
+        [
+          -140,
+          -40
+        ],
+        [
+          -60,
+          -40
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 4,
+      "neighbour_translation_mm": [
+        0.0,
+        -200.0
+      ],
+      "locator_centres_mm": [
+        [
+          -60,
+          -120
+        ],
+        [
+          20,
+          -120
+        ],
+        [
+          -60,
+          -80
+        ],
+        [
+          20,
+          -80
+        ]
+      ],
+      "panel_ownership": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "minimum_head_clearance_mm": 27.549999999999997,
+      "minimum_slot_to_edge_mm": 4.917436609669408
+    },
+    {
+      "edge": 5,
+      "neighbour_translation_mm": [
+        180.0,
+        -100.0
+      ],
+      "locator_centres_mm": [
+        [
+          40,
+          -60
+        ],
+        [
+          120,
+          -60
+        ],
+        [
+          40,
+          -20
+        ],
+        [
+          120,
+          -20
+        ]
+      ],
+      "panel_ownership": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "minimum_head_clearance_mm": 7.549999999999996,
+      "minimum_slot_to_edge_mm": 4.917436609669411
+    }
+  ],
+  "jig_insertion_poses": [
+    {
+      "edge": 0,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 0,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 0,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_front_offset_mm": -2.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_front_offset_mm": -1.0,
+      "collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_front_offset_mm": 0.0,
+      "collision_mm3": 0.0
+    }
+  ],
+  "mesh_checks": [
+    {
+      "file": "S01_panel.stl",
+      "watertight": true,
+      "components": 1,
+      "size_mm": [
+        239.650146484375,
+        199.6999969482422,
+        15.0
+      ]
+    },
+    {
+      "file": "front_jig_5p2_deep_flat.stl",
+      "watertight": true,
+      "components": 1,
+      "size_mm": [
+        92.0,
+        60.0,
+        8.399999618530273
+      ]
+    },
+    {
+      "file": "wall_shoe_3x16_pilot_2p2.stl",
+      "watertight": true,
+      "components": 1,
+      "size_mm": [
+        34.0,
+        54.0,
+        18.0
+      ]
+    }
+  ],
+  "physical_status": "5.2 mm PETG strip accepted; full kit not yet printed",
+  "load_rating_kg": null
+}

@@ -1,0 +1,97 @@
+{
+  "status": "nominal geometry checked; pilot retention and actual screw tolerances pending",
+  "product_diagram": {
+    "major_diameter_mm": 3,
+    "under_head_length_mm": 16,
+    "head_diameter_mm": 4.9,
+    "head_height_mm": 3,
+    "source": "user-supplied product dimension diagram"
+  },
+  "panel_thickness_mm": 5,
+  "panel_clearance_hole_mm": 3.4,
+  "pilot_candidates_mm": [
+    2.2,
+    2.4,
+    2.6
+  ],
+  "prototype_default_pilot_mm": 2.4,
+  "pilot_selected_by_physical_test": false,
+  "shoe_front_z_mm": 5,
+  "pilot_floor_z_mm": 18.5,
+  "adhesive_surface_z_mm": 23,
+  "tip_z_mm": 16,
+  "penetration_into_shoe_including_point_mm": 11,
+  "clearance_to_pilot_floor_mm": 2.5,
+  "clearance_to_adhesive_mm": 7,
+  "head_radial_bearing_margin_mm": 0.7500000000000002,
+  "previous_4p5_hole_head_radial_margin_mm": 0.20000000000000018,
+  "bearing_area_mm2": 9.778207134298237,
+  "nut_required": false,
+  "washer_in_trial": false,
+  "parts": [
+    {
+      "name": "pilot_test_2p2_2p4_2p6",
+      "size_mm": [
+        70.0,
+        30.0,
+        18.0
+      ],
+      "volume_cm3": 11.169818415998268,
+      "watertight": true
+    },
+    {
+      "name": "five_mm_clearance_plate_3p4",
+      "size_mm": [
+        70.0,
+        14.0,
+        5.0
+      ],
+      "volume_cm3": 4.763811958466884,
+      "watertight": true
+    },
+    {
+      "name": "mounting_coupon_self_tapping_3p4",
+      "size_mm": [
+        36.00000000000001,
+        64.00000000000001,
+        15.0
+      ],
+      "volume_cm3": 11.661738920315033,
+      "watertight": true
+    },
+    {
+      "name": "wall_shoe_self_tapping_3x16_pilot_2p2",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.000000000000004
+      ],
+      "volume_cm3": 7.941509893115296,
+      "watertight": true
+    },
+    {
+      "name": "wall_shoe_self_tapping_3x16_pilot_2p4",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.000000000000004
+      ],
+      "volume_cm3": 7.9319374602998085,
+      "watertight": true
+    },
+    {
+      "name": "wall_shoe_self_tapping_3x16_pilot_2p6",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.000000000000004
+      ],
+      "volume_cm3": 7.921541930209079,
+      "watertight": true
+    }
+  ],
+  "important": "Test through the5mm plate: bare16mm screw exceeds the13.5mm pilot depth",
+  "thread_pitch": "not specified; no ISO metric nut compatibility assumed",
+  "physical_fit": "NOT TESTED",
+  "load_rating_kg": null
+}

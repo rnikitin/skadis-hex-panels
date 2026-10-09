@@ -1,39 +1,30 @@
-# Hardware and wall shoes
+# Hardware for the current full-size kit
 
-The current shoe uses a metal M4 nut. A 4.2 mm self-tapping screw is a different fastening system and requires a pilot-hole shoe; it must not be substituted into the M4 nut.
+| Item | Per panel | Two panels | Specification |
+|---|---:|---:|---|
+| Printed wall shoe | 4 | 8 | PETG, 2.2 mm blind pilot |
+| Pointed self-tapping screw | 4 | 8 | 3 × 16 mm under-head length, head Ø4.9 × 3 mm |
+| Adhesive strip | 4 | 8 | 30 × 50 mm, fitted to a 34 × 54 mm base |
+| Removable alignment jig | 1 shared | 1 shared | PETG, 5.2 × 15.2 × 4.4 mm locators, flat support-free body |
 
-## Per panel
+These are the black socket-head self-tappers in the user's product diagram. The seller's `M3` label does not imply an ISO metric machine thread. No M4 nut, washer or permanent inter-panel connector is used in the current kit.
 
-| Part | Quantity | Specification |
-|---|---:|---|
-| Machine screw | 4 | M4 × 16–20, 0.7 mm pitch, pan head; 16 mm is sufficient |
-| Flat metal washer | 4 | M4, 4.3 mm ID × 9 mm OD × 0.8 mm |
-| Hex metal nut | 4 | M4, 7 mm across flats, 3.2 mm thick |
-| Printed wall shoe | 4 | Current M4 shoe |
-| Adhesive strip | 4 | 30 × 50 mm; actual tape specification remains unknown |
-| Printed hidden key | 2 per complete seam | Current 24 × 8 × 3.2 mm key |
+## Screw and shoe stack
 
-There are no inter-panel screws or nuts in the current design.
+- Panel face: 5 mm thick, with a 3.4 mm screw clearance hole.
+- Shoe post: 12 mm diameter, with a 2.2 mm pilot and a lead-in at its front.
+- Screw: 16 mm under the head, including the point; 11 mm enters the shoe through the panel.
+- Screw tip: depth 16 mm from the panel face.
+- Blind pilot floor: depth 18.5 mm, giving 2.5 mm nominal tip clearance.
+- Adhesive surface: depth 23 mm, giving 7 mm between the tip and the adhesive.
+- Head bearing margin: (4.9 − 3.4) / 2 = 0.75 mm radially.
 
-## Screw length
+The pilot was selected by the user for the full assembly print, without another separate pilot trial. Actual insertion torque, printed hole size and retention have not been measured. Use controlled hand tightening through the panel.
 
-Pan-head screw length is measured under the head. With the specified 0.8 mm washer, the current blind bore ends at depth 20.5 mm; the adhesive surface is at 23 mm.
+## Shoe orientation
 
-| Screw | Clearance to bore bottom | Clearance to adhesive surface |
-|---|---:|---:|
-| M4 × 16 | 5.3 mm | 7.8 mm |
-| M4 × 19 | 2.3 mm | 4.8 mm |
-| M4 × 20 | 1.3 mm | 3.8 mm |
+The adhesive-base centroid is offset 8 mm from the screw. Orient this offset upward on the upper shoes and downward on the lower shoes. The footprint is 34 × 54 mm, with a 30 × 50 mm tape area. Four strips provide 60 cm² adhesive area per panel.
 
-The older v3 shoe had a shallower 17.5 mm bore and did not accept M4 × 19 as a direct substitute. Use the current shoe file.
+The planned surface is wallpaper and the tape specification is unverified. No adhesive capacity is assigned by these dimensions.
 
-## Adhesive footprint
-
-The shoe footprint is 34 × 54 mm, with a 30 × 50 mm tape area. Its tape centroid is offset 8 mm outward from the panel centre relative to the screw: upward for upper shoes, downward for lower shoes. This orientation was chosen to reduce the local tilting moment in typical loading; it is not a global adhesive optimization.
-
-Four strips provide 60 cm² total adhesive area. The planned wall surface is wallpaper and the tape is an unverified product described as similar to 3M. No adhesive load rating has been assigned. Enlarging the area does not establish the wallpaper-to-wall bond strength.
-
-## Reference dimensions
-
-- [DIN 7985 / ISO 7045 pan-head screw example](https://www.westfieldfasteners.co.uk/Bolts-Screws-Metric/Machine-Screw-Pozi-Pan-M4x12-A4-Stainless.html)
-- [DIN 934 nut dimensions](https://docs.rs-online.com/24c3/A700000011339000.pdf)
+The legacy M4 shoe and the earlier 2.2 / 2.4 / 2.6 calibration parts remain in historical directories. Use `wall_shoe_3x16_pilot_2p2.stl` from [the full kit](../PRINT_THIS) for this build.

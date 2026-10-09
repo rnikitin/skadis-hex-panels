@@ -2,83 +2,68 @@
 
 [![Validate CAD prototype](https://github.com/rnikitin/skadis-hex-panels/actions/workflows/validate.yml/badge.svg)](https://github.com/rnikitin/skadis-hex-panels/actions/workflows/validate.yml)
 
-Parametric 3D-printable hexagonal panels with one continuous hole lattice across tile boundaries, four diagonal ribs, independent adhesive wall mounts, and replaceable hidden alignment keys.
+**Start in [PRINT_THIS](PRINT_THIS/README.md).** This folder contains only the current printable version. Earlier prototypes are under `archive/`.
 
-**Current status: CAD prototype awaiting physical fit testing.** The current key is **24 × 8 × 3.2 mm**. Each panel supports its own load through four wall mounts. The hidden keys align neighbouring panels and keep the working SKÅDIS slots available.
+| File | Use |
+|---|---|
+| [S01_complete_kit_PETG_P2S.3mf](PRINT_THIS/S01_complete_kit_PETG_P2S.3mf) | Ready Bambu Studio project: two panels, eight mounts and one flat jig |
+| [S01_panel_PLA_P2S.3mf](PRINT_THIS/S01_panel_PLA_P2S.3mf) | Ready Bambu Studio project for the identical panel in PLA |
+| [S01_panel.stl](PRINT_THIS/S01_panel.stl) | Hex panel |
+| [S01_wall_mount_2p2.stl](PRINT_THIS/S01_wall_mount_2p2.stl) | Wall mount for the selected 3 × 16 mm self-tapper |
+| [S01_alignment_jig_5p2.stl](PRINT_THIS/S01_alignment_jig_5p2.stl) | Flat removable jig, 5.2 mm fit and 4.4 mm insertion depth |
 
-![Key size and coupon fix](docs/images/key-size-comparison.png)
+All plates print without supports. See [assembly](docs/assembly.md), [hardware](docs/hardware.md), and [STEP models](cad/) for details.
 
-## Start here
+![Current print kit](docs/images/kit_overview.png)
 
-- **Download the prototype bundle:** [v0.1.0-prototype](https://github.com/rnikitin/skadis-hex-panels/releases/tag/v0.1.0-prototype).
-- **Print the current test:** [corner fit test for Bambu Studio / P2S](models/current/projects/corner_fit_test_24x8x3p2_P2S.3mf), approximately 1 h 48 min and 66 g PLA.
-- **Individual parts:** [current STL files](models/current/stl/).
-- **Inspect the CAD:** [prototype STEP models](models/current/step/).
-- **Assemble it:** [assembly and printing guide](docs/assembly.md).
-- **Buy the hardware:** [hardware and wall mounts](docs/hardware.md).
-- **Understand the geometry:** [design specification](docs/design.md).
-- **See previous decisions:** [design history](docs/history.md).
-- **Read the historical analysis:** [v3 stiffness study](analysis/v3/README.md).
+Each panel is approximately **239.65 × 199.70 × 15 mm**. Panel faces are 5 mm thick; slots are 5.3 × 15.3 mm. Current slicer settings are 0.2 mm layers, four walls and 100% infill. Each PETG panel estimates 6 h 45 min / 239 g. PLA and PETG projects are separate because the installed command-line slicer failed on a combined-material run. Both delivered projects were successfully sliced and checked.
 
-Use the current key and its matching current pockets together. Earlier keys and receivers are different designs.
+Print one or two panels in the chosen material, then the PETG hardware plates. The PLA project is an alternative to a PETG panel plate. No additional small calibration print is required for this iteration.
 
 ## Build from source
 
-Python 3.12 is the supported development baseline. [uv](https://docs.astral.sh/uv/) is recommended:
+Python 3.12 is the supported baseline:
 
 ```sh
 uv sync --extra dev
-uv run skadis-hex build --output build/current
-uv run skadis-hex validate --output build/current
+uv run skadis-hex build --output build/full-kit
+uv run skadis-hex validate --output build/full-kit
 uv run pytest -q
+# Requires a separately installed Bambu Studio:
+uv run skadis-hex slice --output build/full-kit
 ```
 
-Alternatively:
+The build produces three STL parts, STEP parts and mounted assemblies, geometry-only 3MFs and dimension records. Slicing produces the native PETG and PLA projects, plate previews and verification reports. Use `--slicer /path/to/BambuStudio` on other installations. No command sends a print job.
 
-```sh
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e '.[dev]'
-skadis-hex build --output build/current
-skadis-hex validate --output build/current
-```
+Alternatively, install the package with `python -m pip install -e '.[dev]'` in a Python 3.12 virtual environment.
 
-The build creates STL test parts, STEP assemblies, the wall shoe, dimensions, and a component report. Validation checks solid/mesh integrity, symmetry, all six seam directions, insertion envelopes, two-neighbour installation, and the previously missing triangular coupon patch.
-
-To prepare a Bambu Studio project, install Bambu Studio separately:
-
-```sh
-uv run skadis-hex slice --output build/current
-# On other installations, provide the executable explicitly:
-uv run skadis-hex slice --output build/current --slicer /path/to/BambuStudio
-```
-
-This generates a project locally; it does not send anything to a printer. Bundled resolved presets target P2S, a 0.4 mm nozzle, PLA, 0.2 mm layers, four walls, 100% infill, and Arachne walls. Adapt material settings to the actual filament.
-
-## What has been verified
+## Verification status
 
 | Item | Status |
 |---|---|
-| Nominal slot lattice and two-row accessory spacing | Checked geometrically |
-| Closed, connected test-part meshes | Checked |
-| Insertion alongside two existing neighbours | Checked with prescribed spring-arm deformation |
-| Current Bambu Studio test project | Toolpaths generated |
-| Physical key fit, retention, and repeated removal | Pending |
-| Actual accessory body and insertion clearance | Pending |
-| Adhesive attachment to wallpaper | Pending |
-| Full current-panel load rating | Not established |
+| Continuous slot lattice and two-row spacing | Checked geometrically |
+| Connected watertight full-kit meshes | Checked |
+| Six jig seam placements, short locators and screw-head clearance | Checked geometrically |
+| Native PETG/PLA material assignments, supports, plate bounds and toolpaths | Checked |
+| 5.2 mm PETG fit strip | Selected by the user after printing |
+| Increased jig depth and four-point fit | Full-size print pending |
+| Selected 2.2 mm screw pilot | User-selected; full assembly test pending |
+| Accessory insertion, tape on wallpaper and full-panel load rating | Not yet established |
 
-The historical 3 kg / 100 mm calculation used an earlier v3 geometry and idealized material/support conditions. Its results must not be treated as a current-panel or adhesive load rating.
+The historical 3 kg / 100 mm study used earlier geometry and idealized PLA/support conditions. It is not a load rating for the current panel or adhesive mounting.
 
-## Repository map
+## Project map and history
 
 ```text
-src/skadis_hex/     Current geometry, joint, wall mount, validation and print tools
-models/current/    Versioned prototype STL, STEP, 3MF and verification records
-docs/              English design, assembly, hardware and decision history
-analysis/v3/       Historical solver, exact input STEP files and result summaries
-archive/           Superseded experiments and search results
-tests/             Geometry regression fixtures and package checks
+PRINT_THIS/           Current STL and ready Bambu Studio files only
+cad/                  Current STEP parts and mounted assemblies
+verification/current/ Checks, previews and SHA-256 manifest
+src/skadis_hex/       Parametric geometry and build/slicing tools
+docs/                 English printing, hardware and design documentation
+archive/              Superseded prototypes and experiments
+analysis/v3/          Historical stiffness comparison
 ```
 
-All dimensions are in millimetres unless stated otherwise. Source geometry is generated independently; reference models are listed in [references](docs/references.md).
+The rear-open hidden key failed its PETG retention test and was abandoned. Read the [fit report](docs/fit_reports/2026-10-09-hidden-key-retention.md) and [design history](docs/history.md). To reproduce that geometry, use `legacy-build`, `legacy-validate` and `legacy-slice` with a separate output directory; ordinary `build/validate/slice` commands now target the full kit.
+
+All dimensions are millimetres. Source geometry is independently generated; [references](docs/references.md) list the inspiration and technical sources.

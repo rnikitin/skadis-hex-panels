@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "toolpaths_generated": true,
+  "statistics": [
+    "; model printing time: 31m 57s; total estimated time: 32m 17s",
+    "; total filament weight [g] : 15.71"
+  ],
+  "settings": "P2S0.4/PETG/0.2mm/4walls/100%/Arachne",
+  "material": [
+    "PETG"
+  ],
+  "nozzle_temperature": [
+    "255",
+    "255",
+    "255"
+  ],
+  "textured_plate_temp": [
+    "70"
+  ],
+  "physical_print_started": false
+}

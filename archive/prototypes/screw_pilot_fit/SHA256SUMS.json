@@ -1,0 +1,21 @@
+{
+  "parameters.json": "633dc4762ed40c779bbfacff6be095ac8363c2a6627b42939a03fe7e09e0e025",
+  "README.md": "1421f871e94d31d298ee7d1b2bbe3c9014dbf72ada346940d272414c98ce9414",
+  "print_metrics.json": "610c713b789b2c537664c8def271b9d3715765a59739be0fa98ac3530b11825a",
+  "projects/self_tapping_3x16_fit_geometry.3mf": "b55f75b1a4d4711d2bf09fd6c36d5164a0927f6fe6880f77ebd89eda9a0af9d1",
+  "projects/self_tapping_3x16_fit_P2S.3mf": "88cb117f86417bdcd76fd8bde5c82fc171b8452272b055f0a0fc43cfc14dbcdc",
+  "projects/self_tapping_3x16_pilot_test_P2S.3mf": "2fb00291a9609947206f930f4dd94032e00166b44d48f512e0de91858fff3c3a",
+  "projects/self_tapping_3x16_pilot_test_geometry.3mf": "8e8821daf838c3e2036102b0f7420b15a242ecaec69bc6d5866a6f76ccdf9502",
+  "step/pilot_test_2p2_2p4_2p6.step": "32651478aa11a21c25ce24343bb145494ec01bd518c0c3f62ca0f6a41851a6ba",
+  "step/wall_shoe_self_tapping_3x16_pilot_2p6.step": "3c892e5da2863c19ee0f3dc098c35ff80fd0010d504254add0393141c2c22752",
+  "step/five_mm_clearance_plate_3p4.step": "d25302ee19038e6c985379f5e5faa1395d7a67f67164274f73268bacd5aceec1",
+  "step/wall_shoe_self_tapping_3x16_pilot_2p2.step": "36035c94a587c7f46de8ba47e1596edd50243d9d7f2e962ec44ad4c57b8c63ed",
+  "step/mounting_coupon_self_tapping_3p4.step": "7bcefcf6c3f28c80101e563e944c3b80a7e4df4aff12c72a4c2c321e874f9079",
+  "step/wall_shoe_self_tapping_3x16_pilot_2p4.step": "fcd677641775e16619fe938064d52d5d18f0899e1f73d8f2aff29b6a342ced9a",
+  "stl/pilot_test_2p2_2p4_2p6.stl": "aafdff2fc3b64fa58e26342d677ef837fa0bbda682f1a72cff19165f48db8b8e",
+  "stl/mounting_coupon_self_tapping_3p4.stl": "0b360a86a9fc4b381a33b8832e5e9a54b7e8e83de2cea3abc1ee70a075be5091",
+  "stl/wall_shoe_self_tapping_3x16_pilot_2p4.stl": "cea5f76b88b0209370274221deb6c1a6df86784940b749acecfdefee7da509a5",
+  "stl/five_mm_clearance_plate_3p4.stl": "1c9496a8242a1fab78c89dbbf80c323c80ede150f73e22e287911fdf95b6360f",
+  "stl/wall_shoe_self_tapping_3x16_pilot_2p6.stl": "aa127cbcc107466ea13112cb979400a9b76303d1e5f4b679895a2a13b66bb3f8",
+  "stl/wall_shoe_self_tapping_3x16_pilot_2p2.stl": "531bd7d2f35830dddb2df72c4c48edbfafa3a78178da34c0ebd59694a8acf6dc"
+}

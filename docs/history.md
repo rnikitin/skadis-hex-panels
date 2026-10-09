@@ -1,6 +1,6 @@
 # Design history
 
-All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; printable current test files are under `models/current`.
+All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; the printable full-size kit is under `PRINT_THIS`.
 
 | Stage | Result and decision |
 |---|---|
@@ -14,8 +14,11 @@ All items below describe earlier experiments. The active implementation is under
 | v4 removable registration jig | Used working slots during positioning; user preferred hidden permanent alignment in the perimeter |
 | Continuous perimeter with local hook relief | Replaced the excessive 16 × 34 mm rear clearance boxes; extra downward hook travel requested |
 | Hidden joint v1, 14.7 × 4.4 × 2.4 key | Geometric insertion prototype; user requested a larger handling size |
-| Hidden joint v2, 24 × 8 × 3.2 key | Current prototype; receivers moved into lattice corridors, physical fit pending |
+| Hidden joint v2, 24 × 8 × 3.2 key | PETG physical test failed retention and showed excessive play. Permanent keys, dowels and receivers were subsequently abandoned |
 | Missing triangular coupon patch | A crop split off a small face island and the export kept only the largest solid. Crop boundaries moved; filtering removed; regression check now preserves the patch |
+| Removable front jig, revisited | User approved two horizontal bars and a central spine, four short locators on an 80 × 40 grid. Open sides clear wall screw heads. Three labelled PETG fit strips precede the full jig |
+
+The final kit uses 4.4 mm-deep locators with the selected 5.2 mm width. A pull knob was briefly added, then removed at the user’s request to eliminate supports. Panels have PLA and PETG project variants; hardware uses PETG.
 
 ## Retained findings
 
@@ -26,11 +29,12 @@ All items below describe earlier experiments. The active implementation is under
 - Leave room for the hook's downward movement behind boundary slots.
 - Every tile has four independent wall mounts; inter-panel features serve alignment.
 - Adding a tile beside multiple existing neighbours must use a common approach toward the wall.
-- Keep connector prototypes replaceable and large enough to handle.
+- Use a removable front jig for positioning; leave no permanent inter-panel hardware.
 
 ## Remaining physical work
 
-- Print the current corner test and measure fit/retention/removal.
+- The 5.2 mm strip fit was selected. Check the deeper full jig across both seam orientations during the full-size assembly.
+- The user selected a 2.2 mm pilot. Check screw seating during the full-size assembly.
 - Check actual printed accessories, particularly two-row accessories and seam-spanning mounts.
 - Check the local rear hook relief and front screw-head clearance.
 - Test the chosen tape on the actual wallpaper over time.

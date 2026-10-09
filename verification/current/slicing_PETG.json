@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "native_project": "S01_full_test_kit_P2S_PETG_flat_jig.3mf",
+  "plates": [
+    {
+      "plate": 1,
+      "name": "01 S01 panel A - PETG",
+      "material": "PETG",
+      "objects": 1,
+      "seconds": 24304,
+      "grams": 238.87,
+      "supports": false,
+      "bounds_mm": [
+        8.20001,
+        28.200000000000003,
+        247.85013,
+        227.9
+      ],
+      "warnings": []
+    },
+    {
+      "plate": 2,
+      "name": "02 S01 panel B - PETG",
+      "material": "PETG",
+      "objects": 1,
+      "seconds": 24304,
+      "grams": 238.87,
+      "supports": false,
+      "bounds_mm": [
+        8.20001,
+        28.200000000000003,
+        247.85013,
+        227.9
+      ],
+      "warnings": []
+    },
+    {
+      "plate": 3,
+      "name": "03 Eight wall shoes - PETG",
+      "material": "PETG",
+      "objects": 8,
+      "seconds": 9517,
+      "grams": 77.07,
+      "supports": false,
+      "bounds_mm": [
+        42.0,
+        56.00005,
+        208.00000000000003,
+        174.00000000000003
+      ],
+      "warnings": []
+    },
+    {
+      "plate": 4,
+      "name": "04 Flat alignment jig - PETG",
+      "material": "PETG",
+      "objects": 1,
+      "seconds": 2309,
+      "grams": 20.96,
+      "supports": false,
+      "bounds_mm": [
+        82.0,
+        98.00000000000001,
+        174.00000000000003,
+        158.0
+      ],
+      "warnings": []
+    }
+  ],
+  "layer_height_mm": 0.2,
+  "walls": 4,
+  "infill": "100%",
+  "physical_print_started": false
+}

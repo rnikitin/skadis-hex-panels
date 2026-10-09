@@ -1,0 +1,34 @@
+{
+  "plates": [
+    {
+      "plate_name": "S01 panel - PLA alternative",
+      "need_arrange": false,
+      "objects": [
+        {
+          "path": "stl/S01_panel.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            8.2
+          ],
+          "pos_y": [
+            28.2
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        }
+      ],
+      "plate_params": {
+        "filament_map_mode": "Auto For Flush",
+        "filament_map": "1",
+        "filament_volume_map": "0"
+      }
+    }
+  ]
+}
