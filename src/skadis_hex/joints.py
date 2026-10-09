@@ -174,7 +174,7 @@ def lip_shapes(s):
 
 
 @lru_cache(None)
-def panel(with_lips=True):
+def panel(with_lips=True, wall_hole_diameter=4.5):
     base = d.extrude(d.P, 0, 5)
     relevant = [c for c in d.CENTRES if d.P.intersects(Point(c).buffer(12))]
     slots = (
@@ -201,7 +201,7 @@ def panel(with_lips=True):
             d.extrude(q, 5, 10) for q in d.pieces(receiver_plan(s)) if q.area > 1e-8
         )
     body = base.fuse(*bodies).clean()
-    cuts = [d.cylinder(2.25, -0.1, 5.2, x, y) for x, y in d.MOUNTS]
+    cuts = [d.cylinder(wall_hole_diameter / 2, -0.1, 5.2, x, y) for x, y in d.MOUNTS]
     for s in sites():
         cuts.append(d.extrude(pocket_plan(s), FLOOR, 15.1 - FLOOR))
     body = body.cut(*cuts).clean()

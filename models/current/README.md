@@ -2,6 +2,8 @@
 
 This directory contains the reviewed CAD exports and generated Bambu Studio test project for hidden joint v2 (24 × 8 × 3.2 mm key), plus the accepted M4 wall shoe.
 
+**Physical test update:** the key falls out and the assembly is loose. These files remain a reference prototype pending a retention redesign. See the [fit report](../../docs/fit_reports/2026-10-09-hidden-key-retention.md).
+
 - `projects/corner_fit_test_24x8x3p2_P2S.3mf`: first physical test, three fragments and four keys.
 - `stl/`: individual current test parts and the wall shoe.
 - `step/`: full prototype panel, three-panel assembly and wall shoe for inspection.

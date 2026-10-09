@@ -1,8 +1,10 @@
 # Hardware and wall shoes
 
-The current shoe uses a metal M4 nut. A 4.2 mm self-tapping screw is a different fastening system and requires a pilot-hole shoe; it must not be substituted into the M4 nut.
+The newly selected fastener is a nominal 3 × 16 mm pointed self-tapper with a 4.9 × 3 mm socket head. Its candidate shoe uses a blind pilot hole and no nut. See the [self-tapping fit trial](self-tapping-3x16.md) before printing wall mounts.
 
-## Per panel
+The published v0.1.0 shoe and the reference tables below use a metal M4 nut. They are a different fastening system; the selected self-tapper must not be substituted into that nut or used with the 4.5 mm panel hole without reassessing the small head's bearing area.
+
+## Legacy M4 reference, per panel
 
 | Part | Quantity | Specification |
 |---|---:|---|

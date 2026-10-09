@@ -4,12 +4,13 @@
 
 Parametric 3D-printable hexagonal panels with one continuous hole lattice across tile boundaries, four diagonal ribs, independent adhesive wall mounts, and replaceable hidden alignment keys.
 
-**Current status: CAD prototype awaiting physical fit testing.** The current key is **24 × 8 × 3.2 mm**. Each panel supports its own load through four wall mounts. The hidden keys align neighbouring panels and keep the working SKÅDIS slots available.
+**Current key status: physical retention test failed.** The **24 × 8 × 3.2 mm** key falls out of the rear-open receiver and the fit is loose. See the [fit report](docs/fit_reports/2026-10-09-hidden-key-retention.md). A retention redesign is pending. Each panel supports its own load through four wall mounts.
 
 ![Key size and coupon fix](docs/images/key-size-comparison.png)
 
 ## Start here
 
+- **Newly selected wall fastener:** [3 × 16 mm self-tapping screw fit trial](docs/self-tapping-3x16.md). The released M4 nut shoe is a different variant; pilot selection is pending.
 - **Download the prototype bundle:** [v0.1.0-prototype](https://github.com/rnikitin/skadis-hex-panels/releases/tag/v0.1.0-prototype).
 - **Print the current test:** [corner fit test for Bambu Studio / P2S](models/current/projects/corner_fit_test_24x8x3p2_P2S.3mf), approximately 1 h 48 min and 66 g PLA.
 - **Individual parts:** [current STL files](models/current/stl/).

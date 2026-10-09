@@ -12,6 +12,8 @@ Check that the keys stay in place while handling, both directions engage togethe
 
 ## Wall assembly
 
+The sequence below is the released M4 reference. The newly selected 3 × 16 mm self-tapping fastener requires the [separate fit trial](self-tapping-3x16.md) and a 3.4 mm panel mounting hole.
+
 1. Insert a metal M4 nut into each shoe through its side channel. A small piece of thin tape over the channel retains the loose nut; it does not carry the clamping load.
 2. Attach four shoes to the panel using M4 screws and flat washers. Upper shoes have more adhesive area above the screw; rotate the lower shoes 180°.
 3. Apply a 30 × 50 mm adhesive strip to each shoe. Practise the sequence before exposing the adhesive.

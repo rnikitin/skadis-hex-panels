@@ -26,3 +26,5 @@ jobs:
         run: skadis-hex build --output build/ci
       - name: Check solids and insertion paths
         run: skadis-hex validate --output build/ci
+      - name: Build self-tapping wall-mount fit trial
+        run: skadis-hex screw-fit --output build/self-tapping-fit

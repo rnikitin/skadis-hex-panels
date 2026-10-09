@@ -14,7 +14,7 @@ All items below describe earlier experiments. The active implementation is under
 | v4 removable registration jig | Used working slots during positioning; user preferred hidden permanent alignment in the perimeter |
 | Continuous perimeter with local hook relief | Replaced the excessive 16 × 34 mm rear clearance boxes; extra downward hook travel requested |
 | Hidden joint v1, 14.7 × 4.4 × 2.4 key | Geometric insertion prototype; user requested a larger handling size |
-| Hidden joint v2, 24 × 8 × 3.2 key | Current prototype; receivers moved into lattice corridors, physical fit pending |
+| Hidden joint v2, 24 × 8 × 3.2 key | Receivers moved into lattice corridors; physical test failed retention and showed excessive play. Rear capture needs redesign; shorter keys are acceptable |
 | Missing triangular coupon patch | A crop split off a small face island and the export kept only the largest solid. Crop boundaries moved; filtering removed; regression check now preserves the patch |
 
 ## Retained findings
