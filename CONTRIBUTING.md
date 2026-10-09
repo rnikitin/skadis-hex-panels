@@ -12,3 +12,16 @@ Keep documentation, diagrams, commit messages and release notes in English.
 Treat the archived experiments as historical records. Large numerical fields, local environments, scratch outputs and duplicate ZIP archives belong outside Git. The generated working directory is `build/`.
 
 Preserve legacy fixtures and archived prototypes. Current panel builds must contain no legacy receiver pads or key pockets. Keep the jig flat and support-free, with the physically selected 5.2 mm locator width.
+
+## Documentation renders
+
+Install the optional tools with `uv sync --extra dev --extra visuals`, then run:
+
+```sh
+uv run python scripts/render_panels.py
+uv run python scripts/render_kit_overview.py
+uv run python scripts/publish_current.py build/full-kit
+uv run python scripts/check_delivery.py
+```
+
+`render_panels.py --preview` writes smaller camera/lighting previews to ignored `work/render-preview`. Final renders use the released STL files and preserve the global lattice and nominal seam spacing.

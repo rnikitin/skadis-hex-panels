@@ -16,6 +16,17 @@ All plates print without supports. See [assembly](docs/assembly.md), [hardware](
 
 ![Current print kit](docs/images/kit_overview.png)
 
+## Panel renders
+
+| Front | Rear, tilted to show all four ribs |
+|---|---|
+| ![One S01 panel from the front](docs/images/S01_front.png) | ![S01 rear ribs at an oblique angle](docs/images/S01_rear_oblique.png) |
+
+![Seven S01 panels joined on the same slot lattice](docs/images/S01_front_assembly.png)
+
+Matte-white studio renders of the final printable STL geometry. The seven-panel layout uses the nominal 0.3 mm seams. Full-resolution images are in `docs/images`.
+
+
 Each panel is approximately **239.65 × 199.70 × 15 mm**. Panel faces are 5 mm thick; slots are 5.3 × 15.3 mm. Current slicer settings are 0.2 mm layers, four walls and 100% infill. Each PETG panel estimates 6 h 45 min / 239 g. PLA and PETG projects are separate because the installed command-line slicer failed on a combined-material run. Both delivered projects were successfully sliced and checked.
 
 Print one or two panels in the chosen material, then the PETG hardware plates. The PLA project is an alternative to a PETG panel plate. No additional small calibration print is required for this iteration.
