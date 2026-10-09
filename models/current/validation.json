@@ -1,0 +1,220 @@
+{
+  "status": "geometric checks passed; physical snap retention NOT validated",
+  "checks": [
+    {
+      "edge": 0,
+      "point": [
+        80,
+        80
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.0240000000000216,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 0,
+      "point": [
+        100,
+        20
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.024000000000002474,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "point": [
+        -30,
+        100
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.02399999999999708,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "point": [
+        30,
+        100
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.023999999999996347,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "point": [
+        -100,
+        20
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.024000000000018507,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "point": [
+        -80,
+        80
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.02400000000002447,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "point": [
+        -100,
+        -20
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.02400000000001268,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "point": [
+        -80,
+        -80
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.023999999999985405,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "point": [
+        -30,
+        -100
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.023999999999994904,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "point": [
+        30,
+        -100
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.02400000000000762,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "point": [
+        80,
+        -80
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.023999999999997332,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "point": [
+        100,
+        -20
+      ],
+      "seated_collision_mm3": 0.0,
+      "rigid_sweep_outside_retainers_mm3": 0.0,
+      "intended_snap_contact_mm3": 0.02400000000000948,
+      "compressed_sweep_collision_mm3": 0.0,
+      "first_half_insertion_mm3": 0.0
+    }
+  ],
+  "mesh_checks": [
+    {
+      "file": "corner_EXISTING_horizontal.stl",
+      "size_mm": [
+        67.8250732421875,
+        29.850000381469712,
+        15.0
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "file": "corner_EXISTING_oblique.stl",
+      "size_mm": [
+        49.8250732421875,
+        79.99999999999999,
+        15.0
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "file": "corner_NEW.stl",
+      "size_mm": [
+        79.8250732421875,
+        49.84999847412108,
+        15.0
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "file": "spring_key_24x8x3p2.stl",
+      "size_mm": [
+        24.0,
+        8.0,
+        3.200000047683716
+      ],
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "file": "wall_shoe_M4_16_to_20.stl",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.0
+      ],
+      "watertight": true,
+      "components": 1
+    }
+  ],
+  "two_neighbour_edges": [
+    0,
+    1
+  ],
+  "simultaneous_keys": 4,
+  "key_dimensions_mm": [
+    24,
+    8,
+    3.2
+  ],
+  "restored_triangle_witness_mm3": 13.120811440122482,
+  "coupon_discarded_components": 0,
+  "nominal_throat_interference_per_arm_mm": 0.1,
+  "assumed_key_tip_deflection_mm": 0.18,
+  "cantilever_root_strain_estimate": 0.0028695929429269854,
+  "analysis_limit": "Simple uniform-beam estimate, no friction/contact or printed anisotropy; not a strength/fatigue result",
+  "rear_hook_travel_extra_mm": 3.0,
+  "hook_body_fit": "NOT validated against a measured accessory",
+  "full_panel_print": "not released; use the three-corner coupon first"
+}

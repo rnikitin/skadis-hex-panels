@@ -1,0 +1,28 @@
+name: Validate CAD prototype
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  geometry:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install CAD package
+        run: python -m pip install '.[dev]'
+      - name: Check geometry snapshots and slot lattice
+        run: python -m pytest -q
+      - name: Build current prototype
+        run: skadis-hex build --output build/ci
+      - name: Check solids and insertion paths
+        run: skadis-hex validate --output build/ci

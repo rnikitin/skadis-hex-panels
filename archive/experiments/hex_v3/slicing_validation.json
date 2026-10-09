@@ -1,0 +1,29 @@
+[
+  {
+    "name": "01_fit_tests",
+    "exit_code": 0,
+    "toolpaths": true,
+    "statistics": [
+      "; model printing time: 1h 8m 23s; total estimated time: 1h 8m 43s",
+      "; total filament weight [g] : 46.88"
+    ]
+  },
+  {
+    "name": "02_panel",
+    "exit_code": 0,
+    "toolpaths": true,
+    "statistics": [
+      "; model printing time: 4h 18m 11s; total estimated time: 4h 18m 31s",
+      "; total filament weight [g] : 250.96"
+    ]
+  },
+  {
+    "name": "03_four_shoes",
+    "exit_code": 0,
+    "toolpaths": true,
+    "statistics": [
+      "; model printing time: 51m 48s; total estimated time: 52m 8s",
+      "; total filament weight [g] : 40.75"
+    ]
+  }
+]

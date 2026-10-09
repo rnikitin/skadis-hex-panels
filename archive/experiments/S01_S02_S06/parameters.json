@@ -1,0 +1,65 @@
+{
+  "face_thickness_mm": 5.0,
+  "rib_height_mm": 10.0,
+  "rib_width_mm": 2.4,
+  "slot_size_mm": [
+    5.3,
+    15.3
+  ],
+  "rear_free_corridor_mm": [
+    16,
+    34
+  ],
+  "nominal_joint_gap_mm": 0.3,
+  "physical_fit": "NOT TESTED",
+  "parts": [
+    {
+      "id": "S01",
+      "file": "S01_ribbed.stl",
+      "size_mm": [
+        239.65014288630928,
+        199.7,
+        15.0
+      ],
+      "volume_cm3": 229.3182042924355,
+      "xy_export_shift_mm": [
+        119.82507144315464,
+        99.85000000000001
+      ],
+      "whole_slots": 38,
+      "slot_fragments": 14
+    },
+    {
+      "id": "S02",
+      "file": "S02_ribbed.stl",
+      "size_mm": [
+        199.70000000000005,
+        239.65014288630928,
+        15.0
+      ],
+      "volume_cm3": 228.5364975625741,
+      "xy_export_shift_mm": [
+        99.85000000000002,
+        119.82507144315464
+      ],
+      "whole_slots": 38,
+      "slot_fragments": 14
+    },
+    {
+      "id": "S06",
+      "file": "S06_ribbed.stl",
+      "size_mm": [
+        229.66458980337504,
+        199.70000000000002,
+        15.0
+      ],
+      "volume_cm3": 229.49035492331103,
+      "xy_export_shift_mm": [
+        114.83229490168752,
+        99.85000000000001
+      ],
+      "whole_slots": 37,
+      "slot_fragments": 16
+    }
+  ]
+}

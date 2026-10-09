@@ -1,0 +1,38 @@
+[
+  {
+    "name": "fit_test",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 59m 11s; total estimated time: 59m 31s",
+      "; total filament weight [g] : 34.15"
+    ]
+  },
+  {
+    "name": "S01",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 52m 46s; total estimated time: 4h 53m 5s",
+      "; total filament weight [g] : 217.83"
+    ]
+  },
+  {
+    "name": "S02",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 51m 57s; total estimated time: 4h 52m 16s",
+      "; total filament weight [g] : 215.99"
+    ]
+  },
+  {
+    "name": "S06",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 47m 38s; total estimated time: 4h 47m 57s",
+      "; total filament weight [g] : 217.74"
+    ]
+  }
+]

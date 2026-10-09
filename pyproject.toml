@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "skadis-hex-panels"
+version = "0.1.0"
+description = "Parametric hexagonal SKADIS-compatible panels and hidden alignment joint prototypes"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "cadquery==2.8.0",
+  "shapely==2.2.0",
+  "numpy==2.5.3",
+  "trimesh==5.1.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+visuals = ["matplotlib==3.11.2", "pillow>=11,<14"]
+analysis = [
+  "gmsh==4.15.2",
+  "scikit-fem==12.0.2",
+  "pyamg==5.3.0",
+  "scipy==1.18.1",
+  "meshio==5.3.5",
+]
+
+[project.scripts]
+skadis-hex = "skadis_hex.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/skadis_hex"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

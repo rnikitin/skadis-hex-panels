@@ -1,0 +1,32 @@
+[
+  {
+    "h_mm": 2.0,
+    "measured_mm": 1.2935955489398954,
+    "beam_theory_mm": 2.0162,
+    "relative_error": 0.35839919207425086,
+    "solver": {
+      "iterations": 17,
+      "relative_residual": 2.0908020568460678e-09
+    }
+  },
+  {
+    "h_mm": 1.0,
+    "measured_mm": 1.7412967586949066,
+    "beam_theory_mm": 2.0162,
+    "relative_error": 0.13634720826559532,
+    "solver": {
+      "iterations": 33,
+      "relative_residual": 8.352275160260623e-09
+    }
+  },
+  {
+    "h_mm": 0.5,
+    "measured_mm": 1.9167738782360149,
+    "beam_theory_mm": 2.0162,
+    "relative_error": 0.04931362055549304,
+    "solver": {
+      "iterations": 28,
+      "relative_residual": 6.175527193454563e-09
+    }
+  }
+]

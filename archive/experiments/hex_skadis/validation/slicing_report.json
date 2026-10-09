@@ -1,0 +1,98 @@
+[
+  {
+    "project": "01_fit_tests_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 1h 32m 23s; total estimated time: 1h 32m 43s",
+      "; total layer number: 27",
+      "; total filament length [mm] : 20654.60",
+      "; total filament volume [cm^3] : 49680.14",
+      "; total filament weight [g] : 65.58"
+    ]
+  },
+  {
+    "project": "02_horizontal_seam_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 54m 9s; total estimated time: 54m 29s",
+      "; total layer number: 27",
+      "; total filament length [mm] : 11885.41",
+      "; total filament volume [cm^3] : 28587.76",
+      "; total filament weight [g] : 37.74"
+    ]
+  },
+  {
+    "project": "03_diagonal_up_seam_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 1h 9m 34s; total estimated time: 1h 9m 54s",
+      "; total layer number: 27",
+      "; total filament length [mm] : 15632.86",
+      "; total filament volume [cm^3] : 37601.43",
+      "; total filament weight [g] : 49.63"
+    ]
+  },
+  {
+    "project": "04_diagonal_down_seam_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 1h 9m 35s; total estimated time: 1h 9m 55s",
+      "; total layer number: 27",
+      "; total filament length [mm] : 15634.71",
+      "; total filament volume [cm^3] : 37605.89",
+      "; total filament weight [g] : 49.64"
+    ]
+  },
+  {
+    "project": "05_panel_PROTOTYPE_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 2h 56m 26s; total estimated time: 2h 56m 46s",
+      "; total layer number: 25",
+      "; total filament length [mm] : 41683.38",
+      "; total filament volume [cm^3] : 100260.28",
+      "; total filament weight [g] : 132.34"
+    ]
+  },
+  {
+    "project": "06_mounting_parts_P2S.3mf",
+    "exit_code": 0,
+    "printer": "Bambu Lab P2S",
+    "wall_loops": "4",
+    "bed_type": "Textured PEI Plate",
+    "layer_height": "0.2",
+    "toolpaths_verified": true,
+    "statistics": [
+      "; model printing time: 53m 19s; total estimated time: 53m 39s",
+      "; total layer number: 100",
+      "; total filament length [mm] : 9671.56",
+      "; total filament volume [cm^3] : 23262.82",
+      "; total filament weight [g] : 30.71"
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "parts": [
+    {
+      "file": "S01_connectable.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 26124,
+      "size_mm": [
+        239.6501,
+        199.7,
+        15.0
+      ],
+      "front_profile_difference_mm2": 0.3241039186086774,
+      "whole_slots": 38,
+      "perimeter_width_mm": 3.2,
+      "hook_corridors_verified": true
+    },
+    {
+      "file": "S02_connectable.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 26220,
+      "size_mm": [
+        199.7,
+        239.6501,
+        15.0
+      ],
+      "front_profile_difference_mm2": 0.32043533920651723,
+      "whole_slots": 38,
+      "perimeter_width_mm": 3.2,
+      "hook_corridors_verified": true
+    },
+    {
+      "file": "S06_connectable.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 26056,
+      "size_mm": [
+        229.6646,
+        199.7,
+        15.0
+      ],
+      "front_profile_difference_mm2": 0.32316741661147397,
+      "whole_slots": 37,
+      "perimeter_width_mm": 3.2,
+      "hook_corridors_verified": true
+    },
+    {
+      "file": "key_loose.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 596,
+      "size_mm": [
+        6.8,
+        8.0,
+        6.4
+      ]
+    },
+    {
+      "file": "key_normal.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 612,
+      "size_mm": [
+        6.8,
+        8.0,
+        6.4
+      ]
+    },
+    {
+      "file": "key_tight.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 604,
+      "size_mm": [
+        6.8,
+        8.0,
+        6.4
+      ]
+    },
+    {
+      "file": "fit_straight_1.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 1324,
+      "size_mm": [
+        83.05,
+        15.85,
+        15.0
+      ]
+    },
+    {
+      "file": "fit_straight_2.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 1324,
+      "size_mm": [
+        83.05,
+        15.85,
+        15.0
+      ]
+    },
+    {
+      "file": "fit_diagonal_1.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 816,
+      "size_mm": [
+        70.2536,
+        50.8506,
+        15.0
+      ]
+    },
+    {
+      "file": "fit_diagonal_2.stl",
+      "watertight": true,
+      "connected_bodies": 1,
+      "triangles": 816,
+      "size_mm": [
+        70.2536,
+        50.8506,
+        15.0
+      ]
+    }
+  ],
+  "physical_fit": "UNTESTED"
+}

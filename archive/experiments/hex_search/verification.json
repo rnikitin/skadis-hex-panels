@@ -1,0 +1,13 @@
+{
+  "general_candidates_verified": 85,
+  "symmetric_candidates_verified": 107,
+  "failed_candidates": 0,
+  "sources_sha256": {
+    "symmetric_search.py": "1a2688b28cc97b76f021065f6e484b13b5045a7e49df93e547424a9632cbe41c",
+    "test_search.py": "f60bf414c4d33bff09880f7c52c66f3afd5b9c1fade87a7d207916f8d5f593bb",
+    "search.py": "9cd82f4cfaec8e9097198d717f0bcec9dd1b79176c73563f11234409dc3e7604",
+    "test_symmetric.py": "d5b5f4314490282fbd699809cfb73ac6b4eaa25cda58e6ca075a339fa4ef4826"
+  },
+  "tests": "...........                                                              [100%]\n11 passed in 1.85s",
+  "physical_fit": "UNTESTED"
+}

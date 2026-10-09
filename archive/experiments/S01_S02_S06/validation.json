@@ -1,0 +1,50 @@
+{
+  "parts": [
+    {
+      "id": "S01",
+      "watertight": true,
+      "single_connected_body": true,
+      "triangles": 25932,
+      "actual_size_mm": [
+        239.6501,
+        199.7,
+        15.0
+      ],
+      "whole_slots_measured_from_STL": 38,
+      "front_profile_difference_mm2": 0.3241039186086774,
+      "rear_corridor_blocked_area_mm2": 0.0002763927003771849,
+      "mirrors_verified_on_STL_sections": true
+    },
+    {
+      "id": "S02",
+      "watertight": true,
+      "single_connected_body": true,
+      "triangles": 26052,
+      "actual_size_mm": [
+        199.7,
+        239.6501,
+        15.0
+      ],
+      "whole_slots_measured_from_STL": 38,
+      "front_profile_difference_mm2": 0.32043533920651723,
+      "rear_corridor_blocked_area_mm2": 0.0005474666838941539,
+      "mirrors_verified_on_STL_sections": true
+    },
+    {
+      "id": "S06",
+      "watertight": true,
+      "single_connected_body": true,
+      "triangles": 25896,
+      "actual_size_mm": [
+        229.6646,
+        199.7,
+        15.0
+      ],
+      "whole_slots_measured_from_STL": 37,
+      "front_profile_difference_mm2": 0.32316741661147397,
+      "rear_corridor_blocked_area_mm2": 0.0005805169013753278,
+      "mirrors_verified_on_STL_sections": true
+    }
+  ],
+  "physical_fit": "UNTESTED"
+}

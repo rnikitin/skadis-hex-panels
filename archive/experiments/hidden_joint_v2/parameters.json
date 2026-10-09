@@ -1,0 +1,329 @@
+{
+  "status": "CAD prototype; untested physical snap-fit",
+  "parts": [
+    {
+      "name": "spring_key_24x8x3p2",
+      "size_mm": [
+        24.0,
+        8.0,
+        3.1999999999999993
+      ],
+      "volume_cm3": 0.192523044830253,
+      "print_shift_mm": [
+        12.0,
+        4.0,
+        -9.0
+      ]
+    },
+    {
+      "name": "corner_NEW",
+      "size_mm": [
+        79.82507144315466,
+        49.85000000000001,
+        15.0
+      ],
+      "volume_cm3": 19.011277019559767,
+      "print_shift_mm": [
+        -10.0,
+        -49.999999999999986,
+        -0.0
+      ]
+    },
+    {
+      "name": "corner_EXISTING_oblique",
+      "size_mm": [
+        49.82507144315464,
+        80.00000000000001,
+        15.0
+      ],
+      "volume_cm3": 18.07296810326109,
+      "print_shift_mm": [
+        -60.17492855684536,
+        -49.999999999999986,
+        -0.0
+      ]
+    },
+    {
+      "name": "corner_EXISTING_horizontal",
+      "size_mm": [
+        67.82507144315466,
+        29.85000000000001,
+        15.0
+      ],
+      "volume_cm3": 11.39922431885154,
+      "print_shift_mm": [
+        -10.0,
+        -100.14999999999999,
+        -0.0
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "edge": 0,
+      "point": [
+        80,
+        80
+      ],
+      "normal": [
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "tangent": [
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "key_axis_degrees": 45,
+      "rear_relief_margin_mm": 0.7925226092315801
+    },
+    {
+      "edge": 0,
+      "point": [
+        100,
+        20
+      ],
+      "normal": [
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "tangent": [
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "key_axis_degrees": 45,
+      "rear_relief_margin_mm": 0.7925226092315795
+    },
+    {
+      "edge": 1,
+      "point": [
+        -30,
+        100
+      ],
+      "normal": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "tangent": [
+        -1.0,
+        6.123233995736766e-17
+      ],
+      "key_axis_degrees": 90,
+      "rear_relief_margin_mm": 0.8025094459786786
+    },
+    {
+      "edge": 1,
+      "point": [
+        30,
+        100
+      ],
+      "normal": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "tangent": [
+        -1.0,
+        6.123233995736766e-17
+      ],
+      "key_axis_degrees": 90,
+      "rear_relief_margin_mm": 0.8025094459786786
+    },
+    {
+      "edge": 2,
+      "point": [
+        -100,
+        20
+      ],
+      "normal": [
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "tangent": [
+        -0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "key_axis_degrees": 135,
+      "rear_relief_margin_mm": 0.7925226092315784
+    },
+    {
+      "edge": 2,
+      "point": [
+        -80,
+        80
+      ],
+      "normal": [
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "tangent": [
+        -0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "key_axis_degrees": 135,
+      "rear_relief_margin_mm": 0.7925226092315795
+    },
+    {
+      "edge": 3,
+      "point": [
+        -100,
+        -20
+      ],
+      "normal": [
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "tangent": [
+        0.7071067811865475,
+        -0.7071067811865477
+      ],
+      "key_axis_degrees": 225,
+      "rear_relief_margin_mm": 0.7925226092315795
+    },
+    {
+      "edge": 3,
+      "point": [
+        -80,
+        -80
+      ],
+      "normal": [
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "tangent": [
+        0.7071067811865475,
+        -0.7071067811865477
+      ],
+      "key_axis_degrees": 225,
+      "rear_relief_margin_mm": 0.7925226092315801
+    },
+    {
+      "edge": 4,
+      "point": [
+        -30,
+        -100
+      ],
+      "normal": [
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "tangent": [
+        1.0,
+        -1.8369701987210297e-16
+      ],
+      "key_axis_degrees": 270,
+      "rear_relief_margin_mm": 0.8025094459786786
+    },
+    {
+      "edge": 4,
+      "point": [
+        30,
+        -100
+      ],
+      "normal": [
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "tangent": [
+        1.0,
+        -1.8369701987210297e-16
+      ],
+      "key_axis_degrees": 270,
+      "rear_relief_margin_mm": 0.8025094459786786
+    },
+    {
+      "edge": 5,
+      "point": [
+        80,
+        -80
+      ],
+      "normal": [
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "tangent": [
+        0.7071067811865477,
+        0.7071067811865474
+      ],
+      "key_axis_degrees": 315,
+      "rear_relief_margin_mm": 0.7925226092315784
+    },
+    {
+      "edge": 5,
+      "point": [
+        100,
+        -20
+      ],
+      "normal": [
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "tangent": [
+        0.7071067811865477,
+        0.7071067811865474
+      ],
+      "key_axis_degrees": 315,
+      "rear_relief_margin_mm": 0.7925226092315784
+    }
+  ],
+  "test_sites": [
+    {
+      "edge": 0,
+      "point": [
+        80,
+        80
+      ],
+      "normal": [
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "tangent": [
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "key_axis_degrees": 45,
+      "rear_relief_margin_mm": 0.7925226092315801
+    },
+    {
+      "edge": 1,
+      "point": [
+        30,
+        100
+      ],
+      "normal": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "tangent": [
+        -1.0,
+        6.123233995736766e-17
+      ],
+      "key_axis_degrees": 90,
+      "rear_relief_margin_mm": 0.8025094459786786
+    }
+  ],
+  "dimensions": {
+    "rim_width_mm": 3.2,
+    "key_mm": [
+      24,
+      8,
+      3.2
+    ],
+    "key_seated_z_mm": [
+      9,
+      12.2
+    ],
+    "pocket_clearance_mm": 0.25,
+    "retainer_throat_mm": 3.8,
+    "neck_width_mm": 4.0,
+    "arm_width_mm": 1.0,
+    "arm_length_mm": 9.7
+  },
+  "rear_hook_relief_mm": 2,
+  "extra_hook_vertical_travel_mm": 3.0,
+  "travel_mirrored_for_180_degrees": true,
+  "rear_hook_relief_validated": false,
+  "wall_shoes": "unchanged approved v4",
+  "keys_per_join": 2,
+  "working_slots_consumed": 0,
+  "front_seam_holes": 0,
+  "additional_depth_mm": 0
+}

@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "toolpaths_generated": true,
+  "statistics": [
+    "; model printing time: 1h 47m 45s; total estimated time: 1h 48m 5s",
+    "; total filament weight [g] : 65.51"
+  ],
+  "settings": "P2S0.4/PLA/0.2mm/4walls/100%/Arachne",
+  "physical_print_started": false
+}

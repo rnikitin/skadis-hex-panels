@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S01",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 41m 37s; total estimated time: 4h 41m 57s",
+      "; total filament weight [g] : 216.85"
+    ]
+  },
+  {
+    "id": "S02",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 41m 50s; total estimated time: 4h 42m 10s",
+      "; total filament weight [g] : 215.45"
+    ]
+  },
+  {
+    "id": "S06",
+    "slicer_exit_code": 0,
+    "toolpaths_generated": true,
+    "statistics": [
+      "; model printing time: 4h 39m 39s; total estimated time: 4h 39m 59s",
+      "; total filament weight [g] : 216.80"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "slicing_validation.json": "9c274d5d9e9e51f47157e148e17b074d66f33cc4faa45afa9d75b1ad7263120a",
+  "parameters.json": "7db83ee058a2d8bc111a8cf6f132a72d9c2cd3128d66ee13b2f1809930b14522",
+  "coupon_crop.json": "66a9ffc785ab9d4f42f65944b405f2766a30ca54c9fdac8b73e442229f9e3861",
+  "README.md": "5383d9ed39254c165ec65bfd5dc0e1eec85e2fd0c33838a3f6cd7be584de19c7",
+  "validation.json": "0763bbb5f951525bedb9ad6f158c0514ea825e4afd62b9be79fef4151c839579",
+  "projects/corner_fit_test_geometry.3mf": "6ad0bc80813e2277c878f74b6ceaa5e331d678d6423cce9ea5c1d3db85f9acbe",
+  "projects/corner_fit_test_24x8x3p2_P2S.3mf": "c8645c404cc737f635ef1140fe7bb76c5e8de3e9cf12c39c8e88f22394110934",
+  "step/S01_hidden_joint_PROTOTYPE.step": "201ef2821ec3b36411712ffbbf2a381192932ca7a43a9766f7b339aa5c863140",
+  "step/wall_shoe_M4_16_to_20.step": "7f5f3a5ea00b3bf9e4e40034762b7061959af17286fcd171c176e7a5d9dae01f",
+  "step/three_panels_assembly.step": "a83a589d0cf355cdd0eb1f0f5cc45844357087a0134a5dab68520068ca5b095d",
+  "stl/spring_key_24x8x3p2.stl": "2c91f9b4fad9c09d59dd800a14117ce181a620644feecc0c366c892a64e34802",
+  "stl/corner_EXISTING_horizontal.stl": "4b0c2ddbbd189e218b73d72449fd2df746d0c5ec7a7507ddce5e3641c12e1884",
+  "stl/corner_EXISTING_oblique.stl": "5b7128a68654a8429dec2366780d173e397c0bacab7ebda7455b7b64ed5853d2",
+  "stl/wall_shoe_M4_16_to_20.stl": "cc0acf1551e33755affaa916bc0c6d239109be7901cf0503ebe8260d3edad24f",
+  "stl/corner_NEW.stl": "321b0db4e47a92ee09c920207bd49d377a220abd070240e2f1146aba13dbd203"
+}

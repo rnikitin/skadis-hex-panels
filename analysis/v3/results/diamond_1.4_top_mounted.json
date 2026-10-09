@@ -1,0 +1,158 @@
+{
+  "variant": "diamond",
+  "case": "top",
+  "mounted": true,
+  "h_mm": 1.4,
+  "nodes": 137543,
+  "tetrahedra": 541711,
+  "volume_cm3": 219.00071257431335,
+  "max_displacement_mm": 0.9093320870819771,
+  "max_out_of_plane_mm": 0.904497282914205,
+  "strain_energy_Nmm": 14.997322798790687,
+  "peak_element_von_mises_MPa": 5.452032676652094,
+  "stress_p95_MPa": 1.2801954463733054,
+  "force_balance_error_N": [
+    9.99723673719643e-12,
+    -3.598256791132034e-11,
+    -8.094798165377297e-11
+  ],
+  "moment_balance_error_Nmm": [
+    -6.791734773288949e-09,
+    -2.1078726286407793e-09,
+    -2.608113642047459e-10
+  ],
+  "supports": [
+    {
+      "centre": [
+        -40,
+        -40
+      ],
+      "force_N": [
+        -2.3114484424754287,
+        27.61289725497972,
+        -11.593108819855408
+      ],
+      "moment_Nmm": [
+        238.29323608027386,
+        25.930605445182064,
+        67.08781898024763
+      ]
+    },
+    {
+      "centre": [
+        -40,
+        40
+      ],
+      "force_N": [
+        -7.515464561554327,
+        -10.72397104259301,
+        11.353315819716553
+      ],
+      "moment_Nmm": [
+        148.026119198631,
+        51.14401806963705,
+        -43.11757574811462
+      ]
+    },
+    {
+      "centre": [
+        40,
+        -40
+      ],
+      "force_N": [
+        1.6501580030252092,
+        27.088250689348826,
+        -11.495211419297952
+      ],
+      "moment_Nmm": [
+        229.3007777853353,
+        2.7459364559804,
+        33.21791503570131
+      ]
+    },
+    {
+      "centre": [
+        40,
+        40
+      ],
+      "force_N": [
+        8.17675501035985,
+        -11.88316463202216,
+        11.735004421143612
+      ],
+      "moment_Nmm": [
+        127.04206861955092,
+        -59.65548576718605,
+        72.66648791231717
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "centre": [
+        -20,
+        80
+      ],
+      "area_mm2": 126.65741643651118,
+      "centroid_mm": [
+        -20.010977310684893,
+        80.00849976546607,
+        0.0
+      ]
+    },
+    {
+      "centre": [
+        20,
+        80
+      ],
+      "area_mm2": 127.41229899060451,
+      "centroid_mm": [
+        19.944188850668375,
+        80.0058733290513,
+        0.0
+      ]
+    },
+    {
+      "centre": [
+        -20,
+        40
+      ],
+      "area_mm2": 127.66059769372961,
+      "centroid_mm": [
+        -20.04144158693299,
+        40.03053039720407,
+        0.0
+      ]
+    },
+    {
+      "centre": [
+        20,
+        40
+      ],
+      "area_mm2": 126.79415733602036,
+      "centroid_mm": [
+        20.009777920522943,
+        39.951058771081236,
+        0.0
+      ]
+    }
+  ],
+  "solver": {
+    "iterations": 182,
+    "relative_residual": 9.466990258227711e-09
+  },
+  "seconds": 43.39932894706726,
+  "E_MPa": 2000.0,
+  "nu": 0.35,
+  "mass_kg": 3,
+  "self_mass_kg": 0.2715608835921486,
+  "projection_from_wall_mm": 100,
+  "face_to_wall_mm": 24.0,
+  "limitations": [
+    "isotropic homogeneous solid, not calibrated printed PLA",
+    "shoe/panel contact bonded; tape patches fixed rigidly; adhesive/wall excluded",
+    "loads spread around slots; hook contact/local fracture excluded",
+    "no creep, buckling, damage or safety factor",
+    "peak stress mesh-sensitive"
+  ]
+}

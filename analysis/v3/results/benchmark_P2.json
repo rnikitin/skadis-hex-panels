@@ -1,0 +1,22 @@
+[
+  {
+    "h_mm": 2.0,
+    "measured_mm": 1.9808398585237135,
+    "beam_theory_mm": 2.0162,
+    "relative_error": 0.017538012834186323,
+    "solver": {
+      "iterations": 36,
+      "relative_residual": 7.97809608050793e-09
+    }
+  },
+  {
+    "h_mm": 1.0,
+    "measured_mm": 1.9849457673589956,
+    "beam_theory_mm": 2.0162,
+    "relative_error": 0.015501553735246643,
+    "solver": {
+      "iterations": 64,
+      "relative_residual": 7.0005283528579135e-09
+    }
+  }
+]

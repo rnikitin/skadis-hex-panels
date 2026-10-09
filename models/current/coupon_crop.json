@@ -1,0 +1,19 @@
+{
+  "bounds_mm": [
+    [
+      10.0,
+      50.0
+    ],
+    [
+      110.0,
+      130.0
+    ]
+  ],
+  "components": [
+    1,
+    1,
+    1
+  ],
+  "discarded_components": 0,
+  "reason": "Boundary moved away from slots; no largest-solid filtering"
+}

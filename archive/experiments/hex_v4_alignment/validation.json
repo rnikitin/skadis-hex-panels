@@ -1,0 +1,204 @@
+{
+  "parts": [
+    {
+      "name": "S01_no_seam_connectors",
+      "size_mm": [
+        239.65014288630928,
+        199.7,
+        15.0
+      ],
+      "volume_cm3": 190.47090841158897,
+      "stl_shift_mm": [
+        119.82507144315464,
+        99.85000000000001,
+        -0.0
+      ]
+    },
+    {
+      "name": "alignment_jig_80x40",
+      "size_mm": [
+        92.0,
+        60.0,
+        5.900000000000004
+      ],
+      "volume_cm3": 6.304435363234405,
+      "stl_shift_mm": [
+        46.0,
+        30.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "wall_shoe_M4_16_to_20",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.000000000000004
+      ],
+      "volume_cm3": 7.570640011650983,
+      "stl_shift_mm": [
+        17.0,
+        35.0,
+        23.000000000000004
+      ]
+    }
+  ],
+  "placements_mm": [
+    [
+      100,
+      60
+    ],
+    [
+      20,
+      100
+    ],
+    [
+      -100,
+      60
+    ],
+    [
+      -100,
+      -60
+    ],
+    [
+      20,
+      -100
+    ],
+    [
+      100,
+      -60
+    ]
+  ],
+  "assembly_checks": [
+    {
+      "edge": 0,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 0,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 0,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 1,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 2,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 3,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 4,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_face_offset_mm": -2.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_face_offset_mm": -1.0,
+      "jig_collision_mm3": 0.0
+    },
+    {
+      "edge": 5,
+      "new_panel_face_offset_mm": 0.0,
+      "jig_collision_mm3": 0.0
+    }
+  ],
+  "screw_checks": [
+    {
+      "length_mm": 16,
+      "washer_mm": 0.8,
+      "tip_z_mm": 15.2,
+      "clearance_to_bore_bottom_mm": 5.300000000000001,
+      "distance_to_tape_mm": 7.800000000000001,
+      "collision_mm3": 0.0
+    },
+    {
+      "length_mm": 19,
+      "washer_mm": 0.8,
+      "tip_z_mm": 18.2,
+      "clearance_to_bore_bottom_mm": 2.3000000000000007,
+      "distance_to_tape_mm": 4.800000000000001,
+      "collision_mm3": 0.0
+    },
+    {
+      "length_mm": 20,
+      "washer_mm": 0.8,
+      "tip_z_mm": 19.2,
+      "clearance_to_bore_bottom_mm": 1.3000000000000007,
+      "distance_to_tape_mm": 3.8000000000000007,
+      "collision_mm3": 0.0
+    }
+  ],
+  "pin_size_mm": [
+    4.7,
+    14.7,
+    3.5
+  ],
+  "nominal_slot_size_mm": [
+    5.3,
+    15.3
+  ],
+  "nominal_planar_clearance_per_side_mm": 0.3,
+  "physical_fit": "NOT TESTED",
+  "new_structural_analysis": false,
+  "wall_shoes": "new deeper blind bore ends at z=20.5; M4x16/19/20 with 0.8 washer fit; not for self-tappers",
+  "after_mounting": "No permanent inter-panel restraint; each panel relies on its own shoes/tape"
+}

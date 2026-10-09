@@ -1,0 +1,14 @@
+{
+  "width": 240.0,
+  "height": 200.0,
+  "gap": 0.3,
+  "thickness": 5.0,
+  "slot_allowance": 0.15,
+  "min_web": 2.0,
+  "socket_diameter": 4.2,
+  "socket_depth": 2.1,
+  "pin_clearance": 0.2,
+  "pin_height": 1.8,
+  "bridge_thickness": 3.5,
+  "wall_gap": 20.0
+}
