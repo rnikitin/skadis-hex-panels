@@ -1,4 +1,6 @@
-# Selected 3 × 16 mm self-tapping screw — fit trial
+# Historical 3 × 16 mm self-tapping screw fit trial
+
+The current [full-size kit](assembly.md) uses the user-selected 2.2 mm pilot. No further small pilot print is required before that kit; the candidate trials below remain historical reference.
 
 The user-selected black socket-head screw has these nominal dimensions in the supplied product diagram:
 
@@ -47,6 +49,6 @@ uv run skadis-hex slice-screw-fit --output build/self-tapping-fit
 uv run skadis-hex slice-screw-fit --output build/self-tapping-fit --pilot-only
 ```
 
-The default full-joint build and the published v0.1.0 files still use the legacy M4 shoe. Keep the self-tapping trial separate until its pilot fit is selected. `joints.panel(wall_hole_diameter=3.4)` generates the matching candidate panel geometry; its default 4.5 mm hole remains unchanged for reproducibility.
+The current `build` command produces the full-size kit with the selected 2.2 mm self-tapping shoe. The published v0.1.0 files and `legacy-build` retain the M4 reference. `joints.panel(wall_hole_diameter=3.4)` generates the matching candidate panel geometry; its default 4.5 mm hole remains unchanged for reproducibility.
 
 The shape and nominal dimensions have been checked in CAD. Physical fit, pull-out resistance, long-term retention and adhesive/wall strength remain unverified.

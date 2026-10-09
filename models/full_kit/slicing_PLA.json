@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "native_project": "S01_panel_P2S_PLA.3mf",
+  "plates": [
+    {
+      "plate": 1,
+      "name": "S01 panel - PLA alternative",
+      "material": "PLA",
+      "objects": 1,
+      "seconds": 24226,
+      "grams": 240.59,
+      "supports": false,
+      "bounds_mm": [
+        8.20001,
+        28.200000000000003,
+        247.85013,
+        227.9
+      ],
+      "warnings": []
+    }
+  ],
+  "layer_height_mm": 0.2,
+  "walls": 4,
+  "infill": "100%",
+  "physical_print_started": false
+}

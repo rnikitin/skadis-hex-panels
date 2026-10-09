@@ -1,0 +1,257 @@
+{
+  "plates": [
+    {
+      "plate_name": "01 S01 panel A - PETG",
+      "need_arrange": false,
+      "objects": [
+        {
+          "path": "stl/S01_panel.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            8.2
+          ],
+          "pos_y": [
+            28.2
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        }
+      ],
+      "plate_params": {
+        "filament_map_mode": "Auto For Flush",
+        "filament_map": "1",
+        "filament_volume_map": "0"
+      }
+    },
+    {
+      "plate_name": "02 S01 panel B - PETG",
+      "need_arrange": false,
+      "objects": [
+        {
+          "path": "stl/S01_panel.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            8.2
+          ],
+          "pos_y": [
+            28.2
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        }
+      ],
+      "plate_params": {
+        "filament_map_mode": "Auto For Flush",
+        "filament_map": "1",
+        "filament_volume_map": "0"
+      }
+    },
+    {
+      "plate_name": "03 Eight wall shoes - PETG",
+      "need_arrange": false,
+      "objects": [
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            42
+          ],
+          "pos_y": [
+            56
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            86
+          ],
+          "pos_y": [
+            56
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            130
+          ],
+          "pos_y": [
+            56
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            174
+          ],
+          "pos_y": [
+            56
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            42
+          ],
+          "pos_y": [
+            120
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            86
+          ],
+          "pos_y": [
+            120
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            130
+          ],
+          "pos_y": [
+            120
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        },
+        {
+          "path": "stl/wall_shoe_3x16_pilot_2p2.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            174
+          ],
+          "pos_y": [
+            120
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        }
+      ],
+      "plate_params": {
+        "filament_map_mode": "Auto For Flush",
+        "filament_map": "1",
+        "filament_volume_map": "0"
+      }
+    },
+    {
+      "plate_name": "04 Flat alignment jig - PETG",
+      "need_arrange": false,
+      "objects": [
+        {
+          "path": "stl/front_jig_5p2_deep_flat.stl",
+          "count": 1,
+          "filaments": [
+            1
+          ],
+          "pos_x": [
+            82
+          ],
+          "pos_y": [
+            98
+          ],
+          "pos_z": [
+            0
+          ],
+          "print_params": {
+            "enable_support": "0"
+          }
+        }
+      ],
+      "plate_params": {
+        "filament_map_mode": "Auto For Flush",
+        "filament_map": "1",
+        "filament_volume_map": "0"
+      }
+    }
+  ]
+}

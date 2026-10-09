@@ -1,6 +1,6 @@
 # Design history
 
-All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; printable current test files are under `models/current`.
+All items below describe earlier experiments. The active implementation is under `src/skadis_hex`; the printable full-size kit is under `models/full_kit`.
 
 | Stage | Result and decision |
 |---|---|
@@ -18,6 +18,8 @@ All items below describe earlier experiments. The active implementation is under
 | Missing triangular coupon patch | A crop split off a small face island and the export kept only the largest solid. Crop boundaries moved; filtering removed; regression check now preserves the patch |
 | Removable front jig, revisited | User approved two horizontal bars and a central spine, four short locators on an 80 × 40 grid. Open sides clear wall screw heads. Three labelled PETG fit strips precede the full jig |
 
+The final kit uses 4.4 mm-deep locators with the selected 5.2 mm width. A pull knob was briefly added, then removed at the user’s request to eliminate supports. Panels have PLA and PETG project variants; hardware uses PETG.
+
 ## Retained findings
 
 - Preserve one global slot lattice, including two-row accessory spacing.
@@ -31,8 +33,8 @@ All items below describe earlier experiments. The active implementation is under
 
 ## Remaining physical work
 
-- Select a sliding fit with the labelled 4.9 / 5.1 / 5.2 strips, then test the matching full jig across both seam orientations.
-- Select the wall-shoe pilot diameter using the purchased 3 × 16 mm self-tappers.
+- The 5.2 mm strip fit was selected. Check the deeper full jig across both seam orientations during the full-size assembly.
+- The user selected a 2.2 mm pilot. Check screw seating during the full-size assembly.
 - Check actual printed accessories, particularly two-row accessories and seam-spanning mounts.
 - Check the local rear hook relief and front screw-head clearance.
 - Test the chosen tape on the actual wallpaper over time.

@@ -16,6 +16,9 @@ def main():
             "slice-screw-fit",
             "jig-fit",
             "slice-jig-fit",
+            "legacy-build",
+            "legacy-validate",
+            "legacy-slice",
         ),
     )
     parser.add_argument("--output", type=Path)
@@ -38,15 +41,26 @@ def main():
         if "jig-fit" in args.command
         else "build/self-tapping-fit"
         if "screw-fit" in args.command
-        else "build/current"
+        else "build/legacy-key"
+        if args.command.startswith("legacy-")
+        else "build/full-kit"
     )
     output = (args.output or Path(default_output)).resolve()
     output.mkdir(parents=True, exist_ok=True)
 
-    from . import joints
+    if args.command == "build":
+        from .kit import build
 
-    joints.ROOT = output
-    if args.command == "jig-fit":
+        build(output)
+    elif args.command == "validate":
+        from .kit import validate
+
+        validate(output)
+    elif args.command == "slice":
+        from .kit_printing import slice_project
+
+        slice_project(output, args.slicer)
+    elif args.command == "jig-fit":
         from .alignment import build
 
         build(output)
@@ -76,16 +90,20 @@ def main():
         slice_geometry_project(
             output, stem, stem + "_P2S", args.slicer, material=args.material or "PLA"
         )
-    elif args.command == "build":
-        joints.build()
-    elif args.command == "validate":
-        from .validation import main as validate
-
-        validate()
     else:
-        from .printing import main as slice_project
+        from . import joints
 
-        slice_project(output, args.slicer, material=args.material or "PLA")
+        joints.ROOT = output
+        if args.command == "legacy-build":
+            joints.build()
+        elif args.command == "legacy-validate":
+            from .validation import main as validate_legacy
+
+            validate_legacy()
+        else:
+            from .printing import main as slice_legacy
+
+            slice_legacy(output, args.slicer, material=args.material or "PLA")
 
 
 if __name__ == "__main__":

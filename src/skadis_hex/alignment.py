@@ -26,7 +26,7 @@ def jig_plan():
 
 
 @lru_cache(None)
-def make_locator(width):
+def make_locator(width, projection=PROJECTION):
     if not 0 < width < 5.3:
         raise ValueError(
             "Locator width must be positive and smaller than the 5.3 mm slot"
@@ -34,7 +34,7 @@ def make_locator(width):
     return (
         cq.Workplane("XY", origin=(0, 0, BODY))
         .slot2D(width + 10, width, 90)
-        .extrude(PROJECTION)
+        .extrude(projection)
         .faces(">Z")
         .edges()
         .chamfer(min(0.4, width / 4))
@@ -73,10 +73,12 @@ def _label_plan(value):
     return translate(shape, -(x0 + x1) / 2, -(y0 + y1) / 2)
 
 
-def _make_body(plan, points, width):
+def _make_body(plan, points, width, projection=PROJECTION):
     shape = (
         g.extrude(plan, 0, BODY)
-        .fuse(*[make_locator(width).translate((x, y, 0)) for x, y in points])
+        .fuse(
+            *[make_locator(width, projection).translate((x, y, 0)) for x, y in points]
+        )
         .clean()
     )
     shape = shape.cut(
@@ -94,6 +96,12 @@ def make_jig(width=5.1):
 @lru_cache(None)
 def make_fit_strip(width):
     return _make_body(box(-8, -30, 8, 30), [(0, -20), (0, 20)], width)
+
+
+@lru_cache(None)
+def make_flat_jig():
+    """Selected 5.2 mm fit and 4.4 mm locators; flat base, no supports."""
+    return _make_body(jig_plan(), PIN_POINTS, 5.2, 4.4)
 
 
 def verify_placements():

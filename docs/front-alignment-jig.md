@@ -1,4 +1,6 @@
-# Removable front alignment jig
+# Historical front-jig width trial
+
+The user selected the **5.2 mm** PETG strip. The current [full-size kit](assembly.md) uses a flat jig with 4.4 mm-deep locators and no handle or supports. The original trials below remain reference files; printing them again is not required.
 
 The next print is the [three-strip PETG fit trial](../models/alignment_fit/projects/front_jig_fit_strips_P2S_PETG.3mf). Estimated on P2S with a 0.4 mm nozzle: **32 minutes and 15.71 g**. The project has been sliced; no physical fit has been verified.
 

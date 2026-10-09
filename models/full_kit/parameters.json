@@ -1,0 +1,107 @@
+{
+  "status": "full-size physical test kit",
+  "nominal_panel_mm": [
+    240,
+    200
+  ],
+  "face_thickness_mm": 5,
+  "total_panel_depth_mm": 15,
+  "diagonal_ribs": 4,
+  "diagonal_rib_section_mm": [
+    2.4,
+    10
+  ],
+  "perimeter_width_mm": 3.2,
+  "slot_mm": [
+    5.3,
+    15.3
+  ],
+  "nominal_seam_gap_mm": 0.3,
+  "wall_holes_mm": 3.4,
+  "wall_pilot_mm": 2.2,
+  "pilot_selection": "user-selected; no separate pilot print requested",
+  "screw_mm": {
+    "thread": 3,
+    "under_head_length": 16,
+    "head_diameter": 4.9,
+    "head_height": 3
+  },
+  "screw_tip_to_pilot_floor_mm": 2.5,
+  "screw_tip_to_adhesive_mm": 7,
+  "head_radial_bearing_mm": 0.75,
+  "tape_area_per_shoe_mm": [
+    30,
+    50
+  ],
+  "shoes_per_panel": 4,
+  "adhesive_plane_from_face_mm": 23,
+  "jig_locator_mm": [
+    5.2,
+    15.2,
+    4.4
+  ],
+  "jig_rear_depth_reserve_mm": 0.6,
+  "jig_handle": false,
+  "jig_width_fit": "5.2 mm selected by user from PETG strip test",
+  "jig_new_depth_printed": false,
+  "no_permanent_seam_connectors": true,
+  "plate_contents": [
+    {
+      "name": "01 S01 panel A PETG",
+      "material": "PETG",
+      "panels": 1
+    },
+    {
+      "name": "02 S01 panel B PETG",
+      "material": "PETG",
+      "panels": 1
+    },
+    {
+      "name": "03 Eight wall shoes PETG",
+      "material": "PETG",
+      "wall_shoes": 8
+    },
+    {
+      "name": "04 Flat jig PETG",
+      "material": "PETG",
+      "jigs": 1,
+      "supports": false
+    }
+  ],
+  "alternative_panel_project": "S01_panel_P2S_PLA.3mf; identical geometry, PLA settings",
+  "parts": [
+    {
+      "name": "S01_panel",
+      "size_mm": [
+        239.65014288630928,
+        199.7,
+        15.0
+      ],
+      "volume_cm3": 198.19523120336106,
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "name": "wall_shoe_3x16_pilot_2p2",
+      "size_mm": [
+        34.0,
+        54.0,
+        18.000000000000004
+      ],
+      "volume_cm3": 7.941509893115296,
+      "watertight": true,
+      "components": 1
+    },
+    {
+      "name": "front_jig_5p2_deep_flat",
+      "size_mm": [
+        92.0,
+        60.0,
+        8.4
+      ],
+      "volume_cm3": 17.264902611295934,
+      "watertight": true,
+      "components": 1
+    }
+  ]
+}

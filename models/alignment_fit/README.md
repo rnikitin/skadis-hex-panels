@@ -1,4 +1,6 @@
-# Removable front alignment jig trial
+# Historical front alignment jig trial
+
+The user selected 5.2 mm. Current print files are in the [full-size kit](../full_kit/README.md).
 
 Start with `projects/front_jig_fit_strips_P2S_PETG.3mf`: three labelled two-locator strips, about 32 minutes / 15.71 g PETG on P2S 0.4. Select a sliding fit on an existing printed panel before printing the matching `stl/front_jig_*.stl`.
 

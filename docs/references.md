@@ -24,3 +24,9 @@ The referenced mounts are mechanism examples, not drop-in compatibility claims f
 - [scikit-fem linear elasticity example](https://github.com/kinnala/scikit-fem/blob/master/docs/examples/ex11.py)
 - [Covestro snap-fit design guide](https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557216102.pdf)
 - [3M VHB technical resources](https://www.3m.com/3M/en_US/vhb-tapes-us/resources/)
+
+## Alignment discussion and native project generation
+
+- [Skådis connector](https://makerworld.com/en/models/1880134-skadis-connector)
+- [Infinite seamless modular SKÅDIS boards](https://makerworld.com/en/models/1708043-infinite-seamless-modular-skadis-boards)
+- [Bambu Studio assembly-list interface](https://github.com/bambulab/BambuStudio/blob/master/src/BambuStudio.hpp)
